@@ -1,0 +1,45 @@
+// Author: Troy Kaufman
+// Email: tkaufman@hmc.edu
+// Date: 9/15/24
+
+/*
+    This FSM debounces the incoming row signal
+*/
+
+module debouncer_fsm(input logic clk, nrst,
+                    input logic row_d,
+                    output logic row_d_dbnc);
+    
+    typedef enum logic [1:0] {S0, S1, S2, S3} statetype;
+    statetype current_state, next_state;
+
+    logic [5:0] counter;
+
+    //State register
+    always_ff@(posedge clk)
+        if (~nrst) begin
+            current_state <= S0;
+            counter <= 0;
+        end
+        else if (counter == 'd60) begin
+            current_state <= 0;
+            current_state <= next_state;
+        end
+        else begin
+            current_state <= next_state;
+            counter <= counter + 1;
+        end
+    
+    //Next state logic
+    always_comb
+        case(current_state)
+            S0: if (row_d == 1) next_state = S1; else next_state = current_state;
+            S1: if(counter == 'd60) next_state = S2; else if (row_d == 0) next_state = S0; else next_state == current_state; 
+            S2: next_state = S3;
+            S3: if (row_d == 0) next_state = S0; else next_state = current_state;
+            default: next_state = S0; 
+        endcase
+
+    //Output logic
+    assign row_d_dbnc = (current_state == S2); 
+endmodule

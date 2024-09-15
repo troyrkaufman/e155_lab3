@@ -7,8 +7,8 @@
 */
 
 module debouncer_fsm(input logic clk, nrst,
-                    input logic row_d, btn_press_d, btn_release_d,
-                    output logic row_q);
+                    input logic row_d,
+                    output logic pulse_en);
     
     typedef enum logic [1:0] {S0, S1, S2} statetype;
     statetype current_state, next_state;
@@ -45,5 +45,5 @@ module debouncer_fsm(input logic clk, nrst,
         endcase
 
     //Output logic
-    assign row_q = (current_state == S2); 
+    assign pulse_en = (current_state == S2); 
 endmodule

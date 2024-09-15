@@ -58,8 +58,8 @@ module scanner_fsm (input logic clk, nrst,
                     next_state = current_state;
                 else
                     next_state = row2_released;
-            row2_released:
-                    next_state = row2_base;
+            row0_released:
+                    next_state = row0_base;
             row3_base: //row3
                 if (row_d[3] == 1)
                     next_state = row3_pressed;

@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s11f vlog 2021.4 2021.10, Oct 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/lscc/radiant/3.2/modeltech/win32loem
+vdebouncer_fsm
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1726429918
+!i10b 1
+!s100 8GdY9nj`gDT]0k7OAN9RI1
+Ink7UDJlbod24?_S@nQ2[Q2
+S1
+Z2 dC:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/sim
+w1726429915
+8C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/debouncer_fsm.sv
+FC:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/debouncer_fsm.sv
+!i122 86
+L0 9 41
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2021.4;73
+r1
+!s85 0
+31
+Z5 !s108 1726429918.000000
+!s107 C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/debouncer_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/debouncer_fsm.sv|
+!s101 -O0
+!i113 1
+Z6 o-work work -sv -O0
+Z7 tCvgOpt 0
+vdebouncer_fsm_tb
+R0
+R1
+!i10b 1
+!s100 D>M9kzLSmmlMTZ:eZN`=I1
+IbYWGLmS[0oOne04_=NH3O3
+S1
+R2
+w1726429603
+8C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/debouncer_fsm_tb.sv
+FC:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/debouncer_fsm_tb.sv
+!i122 87
+L0 3 26
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/debouncer_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/debouncer_fsm_tb.sv|
+!s101 -O0
+!i113 1
+R6
+R7
+vscanner_fsm
+R0
+R1
+!i10b 1
+!s100 NDf4NYk`anM=ASZfFD8lH0
+IZ6zKC22]:Z:>_3fNkD8Pf1
+S1
+R2
+w1726425445
+8C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/scanner_fsm.sv
+FC:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/scanner_fsm.sv
+!i122 84
+L0 9 96
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/scanner_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/scanner_fsm.sv|
+!s101 -O0
+!i113 1
+R6
+R7
+vscanner_fsm_tb
+R0
+R1
+!i10b 1
+!s100 4FT`EFo?o^YW8U3zj66dK1
+IlZ8D_`E5mQSndKAWRkX601
+S1
+R2
+w1726425683
+8C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv
+FC:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv
+!i122 85
+L0 3 42
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv|
+!s101 -O0
+!i113 1
+R6
+R7

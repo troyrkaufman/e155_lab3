@@ -14,12 +14,23 @@ module scanner_fsm (input logic clk, nrst,
     typedef enum logic [3:0] {row0_base = 0, row0_pressed = 1, row0_released = 2, row1_base = 3, row1_pressed = 4, row1_released = 5, row2_base = 6, row2_pressed = 7, row2_released =8, row3_base = 9, row3_pressed = 10, row3_released = 11} statetype;
     statetype current_state, next_state;
 
+    //Counter to toggle the columns at 10 kHz
+    logic [20:0] counter;
+
     //State Register
     always_ff@(posedge clk)
-        if(~nrst)
+        if(~nrst) begin
             current_state <= row0_base;
-        else 
+            counter <= 0;
+        end
+        else if (counter == 'b10010110000) begin
             current_state <= next_state;
+            counter <= 0;
+        end
+        else begin
+            current_state <= current_state
+            counter <= counter + 1;
+        end
 
     //Next State Logic
     always_comb begin

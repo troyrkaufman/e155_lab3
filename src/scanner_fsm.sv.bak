@@ -8,18 +8,28 @@
 */
 module scanner_fsm (input logic clk, nrst,
                     input logic [3:0] row_d,
-                    output logic btn_press_q, btn_release_q,
-                    output logic [3:0] col_q, row_q);
+                    output logic [3:0] col_q_out, col_q, row_q);
 
     typedef enum logic [3:0] {row0_base = 0, row0_pressed = 1, row0_released = 2, row1_base = 3, row1_pressed = 4, row1_released = 5, row2_base = 6, row2_pressed = 7, row2_released =8, row3_base = 9, row3_pressed = 10, row3_released = 11} statetype;
     statetype current_state, next_state;
 
+    //Counter to toggle the columns at 10 kHz
+    logic [20:0] counter;
+
     //State Register
     always_ff@(posedge clk)
-        if(~nrst)
+        if(~nrst) begin
             current_state <= row0_base;
-        else 
+            counter <= 0;
+        end
+        else if (counter == 'b10010110000) begin
             current_state <= next_state;
+            counter <= 0;
+        end
+        else begin
+            current_state <= current_state;
+            counter <= counter + 1;
+        end
 
     //Next State Logic
     always_comb begin
@@ -58,8 +68,8 @@ module scanner_fsm (input logic clk, nrst,
                     next_state = current_state;
                 else
                     next_state = row2_released;
-            row0_released:
-                    next_state = row0_base;
+            row2_released:
+                    next_state = row2_base;
             row3_base: //row3
                 if (row_d[3] == 1)
                     next_state = row3_pressed;
@@ -81,23 +91,23 @@ module scanner_fsm (input logic clk, nrst,
     //Output logic
     always_comb begin
         case(current_state)
-            row0_base: begin col_q = 4'b0001; btn_press_q = 0; btn_release_q = 0; end
-            row0_pressed: begin col_q = 4'b0000; btn_press_q = 1; btn_release_q = 0; end
-            row0_released: begin col_q = 4'b0000; btn_press_q = 0; btn_release_q = 1; end
+            row0_base: begin col_q_out = 4'b0001; col_q = 'b0000; end
+            row0_pressed: begin _col_q_out = 4'b0000; col_q = 'b0001; end
+            row0_released: begin _col_q_out = 4'b0000; col_q = 'b0000; end
 
-            row1_base: begin col_q = 4'b0010; btn_press_q = 0; btn_release_q = 0; end
-            row1_pressed: begin col_q = 4'b0000; btn_press_q = 1; btn_release_q = 0; end
-            row1_released: begin col_q = 4'b0000; btn_press_q = 0; btn_release_q = 1; end
+            row1_base: begin col_q_out = 4'b0010; col_q = 'b0000; end
+            row1_pressed: begin col_q_out = 4'b0000; col_q = 'b0010; end
+            row1_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            row2_base: begin col_q = 4'b0100; btn_press_q = 0; btn_release_q = 0; end
-            row2_pressed: begin col_q = 4'b0000; btn_press_q = 1; btn_release_q = 0; end
-            row2_released: begin col_q = 4'b0000; btn_press_q = 0; btn_release_q = 1; end
+            row2_base: begin col_q_out = 4'b0100; col_q = 'b0000; end
+            row2_pressed: begin col_q_out = 4'b0000; col_q = 'b0100; end
+            row2_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            row3_base: begin col_q = 4'b0000; btn_press_q = 0; btn_release_q = 0; end
-            row3_pressed: begin col_q = 4'b0000; btn_press_q = 1; btn_release_q = 0; end
-            row3_released: begin col_q = 4'b1000; btn_press_q = 0; btn_release_q = 1; end
+            row3_base: begin col_q_out = 4'b1000; col_q = 'b0000; end
+            row3_pressed: begin col_q_out = 4'b0000; col_q = 'b1000; end
+            row3_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            default: col_q = 4'b0001;
+            default: _col_q_out = 4'b0001;
         endcase
         row_q = row_d;
     end    

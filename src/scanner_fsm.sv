@@ -27,7 +27,7 @@ module scanner_fsm (input logic clk, nrst,
             counter <= 0;
         end
         else begin
-            current_state <= current_state
+            current_state <= current_state;
             counter <= counter + 1;
         end
 
@@ -92,22 +92,22 @@ module scanner_fsm (input logic clk, nrst,
     always_comb begin
         case(current_state)
             row0_base: begin col_q_out = 4'b0001; col_q = 'b0000; end
-            row0_pressed: begin _col_q_out = 4'b0000; col_q = 'b0001; end
-            row0_released: begin _col_q_out = 4'b0000; col_q = 'b0000; end
+            row0_pressed: begin col_q_out = 4'b0000; col_q = 'b0001; end
+            row0_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            row1_base: begin _col_q_out = 4'b0010; col_q = 'b0000; end
-            row1_pressed: begin _col_q_out = 4'b0000; col_q = 'b0010; end
-            row1_released: begin _col_q_out = 4'b0000; col_q = 'b0000; end
+            row1_base: begin col_q_out = 4'b0010; col_q = 'b0000; end
+            row1_pressed: begin col_q_out = 4'b0000; col_q = 'b0010; end
+            row1_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            row2_base: begin _col_q_out = 4'b0100; col_q = 'b0000; end
-            row2_pressed: begin _col_q_out = 4'b0000; col_q = 'b0100; end
-            row2_released: begin _col_q_out = 4'b0000; col_q = 'b0000; end
+            row2_base: begin col_q_out = 4'b0100; col_q = 'b0000; end
+            row2_pressed: begin col_q_out = 4'b0000; col_q = 'b0100; end
+            row2_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            row3_base: begin _col_q_out = 4'b1000; col_q = 'b0000; end
-            row3_pressed: begin _col_q_out = 4'b0000; col_q = 'b1000; end
-            row3_released: begin _col_q_out = 4'b0000; col_q = 'b0000; end
+            row3_base: begin col_q_out = 4'b1000; col_q = 'b0000; end
+            row3_pressed: begin col_q_out = 4'b0000; col_q = 'b1000; end
+            row3_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            default: _col_q_out = 4'b0001;
+            default: col_q_out = 4'b0001;
         endcase
         row_q = row_d;
     end    

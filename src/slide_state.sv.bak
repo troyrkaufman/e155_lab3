@@ -1,7 +1,7 @@
 
 
 module slide_state(input logic clk, nrst,
-        input logic pulse_en,
+        input logic pulse_en;
         input logic [3:0] key_pushed,
         output logic [3:0] current_num, prev_num);
 

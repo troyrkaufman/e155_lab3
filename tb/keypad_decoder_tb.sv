@@ -8,6 +8,7 @@ module keypad_decoder_tb();
     keypad_decoder dut(row_q, row_d, col_d, key_pushed);
 
     initial begin
+        // Tests all 16 cases
         col_d = 0001; row_d = 0001; #5;
         col_d = 0001; row_d = 0010; #5;
         col_d = 0001; row_d = 0100; #5;
@@ -25,14 +26,12 @@ module keypad_decoder_tb();
         col_d = 1000; row_d = 0100; #5;
         col_d = 1000; row_d = 1000; #5;
 
+        //Tests cases for when no button is pressed
         col_d = 0001; row_d = 0000; #5;
         col_d = 1000; row_d = 0000; #5;
         col_d = 0100; row_d = 0000; #5;
         col_d = 1000; row_d = 0000; #5;
         col_d = 1000; row_d = 0010; #5;
-        
-
-
 
     end
 

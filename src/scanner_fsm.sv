@@ -22,7 +22,8 @@ module scanner_fsm (input logic clk, nrst,
             current_state <= row0_base;
             counter <= 0;
         end
-        else if (counter == 'b10010110000) begin
+        //else if (counter == 'b10010110000) begin
+	else if (counter == 'd20) begin
             current_state <= next_state;
             counter <= 0;
         end

@@ -54,23 +54,32 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 Top level modules:
 	slide_state_tb
 
-} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tv.tv {0 {vlog -work work -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tv.tv
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/lab3_tk.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/lab3_tk.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
-** Error: C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tv.tv(7): (vlog-13008) Unsized literal value 0001000100010001 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd0001000100010001) or reduce the literal value to fit in 32 bits.
-** Error: (vlog-13069) C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tv.tv(7): near "0001000100010001": syntax error, unexpected INTEGER NUMBER.
+-- Compiling module lab3_tk
 
-} {3.0 5.0} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/slide_state.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/slide_state.sv
+Top level modules:
+	lab3_tk
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/slide_state.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/slide_state.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
 -- Compiling module slide_state
 
 Top level modules:
 	slide_state
 
-} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/debouncer_fsm.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/debouncer_fsm.sv
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module debouncer_fsm
+-- Compiling module scanner_fsm_tb
 
 Top level modules:
-	debouncer_fsm
+	scanner_fsm_tb
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/lab3_tk_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/lab3_tk_tb.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module lab3_tk_tb
+
+Top level modules:
+	lab3_tk_tb
 
 } {} {}}

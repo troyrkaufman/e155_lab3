@@ -8,12 +8,12 @@
 
 module debouncer_fsm(input logic clk, nrst,
                     input logic row_d,
-                    output logic row_d_dbnc);
+                    output logic pulse_en);
     
     typedef enum logic [1:0] {S0, S1, S2, S3} statetype;
     statetype current_state, next_state;
 
-    logic [5:0] counter;
+    logic [16:0] counter; //1110101001100000 == 'd60000
 
     //State register
     always_ff @(posedge clk)
@@ -21,7 +21,7 @@ module debouncer_fsm(input logic clk, nrst,
             current_state <= S0;
             counter <= 0;
         end
-        else if (counter == 'd60) begin
+        else if (counter == 'd60000) begin
             counter <= 0;
             current_state <= next_state;
         end
@@ -29,7 +29,7 @@ module debouncer_fsm(input logic clk, nrst,
             current_state <= next_state;
             counter <= counter + 1;
         end
-	else begin
+	    else begin
 	    current_state <= next_state;
 	    counter <= 0;
 	end
@@ -45,5 +45,5 @@ module debouncer_fsm(input logic clk, nrst,
         endcase
 
     //Output logic
-    assign row_d_dbnc = (current_state == S2); 
+    assign pulse_en = (current_state == S2); 
 endmodule

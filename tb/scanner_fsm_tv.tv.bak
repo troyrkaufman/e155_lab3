@@ -4,5 +4,6 @@
 // Inputs_Expected Outputs in a 16 bit format
 // row_d, col_q_out, col_q, row_q (all 4 bits)
 
-0001_0001_0001_0001
-0100_0010_0100_0010
+16'b0001_0001_0001_0001
+16'b0100_0010_0100_0010
+

@@ -24,7 +24,7 @@ module lab3_tk(input logic nrst,
 
     // Bit swizzling
     logic [3:0] sync_data;
-    assign sync_data = {sync_data[3], sync_data[2], sync_data[1], sync_data[0]};
+    assign sync_data = {sync_data[3], sync_data[2], sync_data[1], sync_data[0]}
 
     scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(sync_data), .col_q_out(toggle_col), .col_q(column_signals), .row_q(row_signals));
     keypad_decoder keydec(.col_d(column_signals), .row_d(row_signals), .row_q(row_pressed), .key_pushed(key_pushed));

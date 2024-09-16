@@ -9,7 +9,7 @@ module keypad_decoder_tb();
 
     initial begin
         // Tests all 16 cases
-        /*col_d = 4'b0001; row_d = 4'b0001; #5;
+        col_d = 4'b0001; row_d = 4'b0001; #5;
         col_d = 4'b0001; row_d = 4'b0010; #5;
         col_d = 4'b0001; row_d = 4'b0100; #5;
         col_d = 4'b0001; row_d = 4'b1000; #5;
@@ -24,7 +24,7 @@ module keypad_decoder_tb();
         col_d = 4'b1000; row_d = 4'b0001; #5;
         col_d = 4'b1000; row_d = 4'b0010; #5;
         col_d = 4'b1000; row_d = 4'b0100; #5;
-        col_d = 4'b1000; row_d = 4'b1000; #5; */
+        col_d = 4'b1000; row_d = 4'b1000; #5;
 
 	// Mixing up testcases
 	  col_d = 4'b0100; row_d = 4'b0010; #5;

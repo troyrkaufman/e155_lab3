@@ -1,9 +1,23 @@
-C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv
+C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/syncrhonizer.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/syncrhonizer.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module scanner_fsm_tb
+-- Compiling module synchronizer
 
 Top level modules:
-	scanner_fsm_tb
+	synchronizer
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/keypad_decoder_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/keypad_decoder_tb.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module keypad_decoder_tb
+
+Top level modules:
+	keypad_decoder_tb
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/scanner_fsm.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/scanner_fsm.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module scanner_fsm
+
+Top level modules:
+	scanner_fsm
 
 } {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/debouncer_fsm_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/debouncer_fsm_tb.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
@@ -11,5 +25,61 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 
 Top level modules:
 	debouncer_fsm_tb
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/segment_decoder.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/segment_decoder.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module segment_decoder
+
+Top level modules:
+	segment_decoder
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/display_controller.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/display_controller.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module display_controller
+
+Top level modules:
+	display_controller
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/keypad_decoder.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/keypad_decoder.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module keypad_decoder
+
+Top level modules:
+	keypad_decoder
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/slide_state_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/slide_state_tb.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module slide_state_tb
+
+Top level modules:
+	slide_state_tb
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/lab3_tk.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/lab3_tk.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module lab3_tk
+
+Top level modules:
+	lab3_tk
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/slide_state.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/src/slide_state.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module slide_state
+
+Top level modules:
+	slide_state
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/scanner_fsm_tb.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module scanner_fsm_tb
+
+Top level modules:
+	scanner_fsm_tb
+
+} {} {}} C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/lab3_tk_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/my_designs/e155_lab3/e155_lab3/tb/lab3_tk_tb.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module lab3_tk_tb
+
+Top level modules:
+	lab3_tk_tb
 
 } {} {}}

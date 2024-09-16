@@ -19,8 +19,6 @@ module slide_state_tb();
         key_pushed = 'h6; #1; pulse_en = 1; #13;
         key_pushed = 'h0; pulse_en = 0; #15; 
         key_pushed = 'h4;
-	key_pushed = 'h8; pulse_en = 1; #25;
-	key_pushed = 'h1; pulse_en = 0; 
 
     end
 

@@ -39,7 +39,6 @@ module debouncer_fsm(input logic clk, nrst,
         case(current_state)
             S0: if (row_d == 1) next_state = S1; else next_state = current_state;
             S1: if(counter == 'd60) next_state = S2; else if (row_d == 0) next_state = S0; else next_state = current_state; 
-            //S2: next_state = S3;
             S2: if (row_d == 0) next_state = S0; else next_state = current_state;
             default: next_state = S0; 
         endcase

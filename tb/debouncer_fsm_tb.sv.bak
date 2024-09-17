@@ -19,7 +19,7 @@ module debouncer_fsm_tb ();
 		row_d = 1; #3;
 		row_d = 0; #1;
 		
-		row_d = 1; #78;
+		row_d = 1; #150;
 		row_d = 0; #32; 
 		row_d = 1; #55;
 		row_d = 0; 

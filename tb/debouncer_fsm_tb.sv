@@ -3,9 +3,9 @@
 module debouncer_fsm_tb ();
 	logic clk, nrst;
 	logic row_d;
-	logic row_d_dbnc;
+	logic pulse_en;
 
-	debouncer_fsm dut(clk, nrst, row_d, row_d_dbnc);
+	debouncer_fsm dut(clk, nrst, row_d, pulse_en);
 
 	always begin
 		clk = 1; #1; clk = 0; #1;

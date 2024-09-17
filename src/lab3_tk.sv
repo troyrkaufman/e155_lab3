@@ -26,7 +26,7 @@ module lab3_tk(input logic nrst,
     assign sync_data = {sync_data3, sync_data2, sync_data1, sync_data0};
 	 
     // High-speed oscillator
-    HSOSC #(.CLKHF_DIV(2'b00)) hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
+    LSOSC ls_osc (.CLKLSPU(1'b1), .CLKLSEN(1'b1), .CLKLS(int_osc));
 
     synchronizer sync0(.clk(int_osc), .nrst(nrst), .data_d(row_d[0]), .data_q(sync_data0));
     synchronizer sync1(.clk(int_osc), .nrst(nrst), .data_d(row_d[1]), .data_q(sync_data1));

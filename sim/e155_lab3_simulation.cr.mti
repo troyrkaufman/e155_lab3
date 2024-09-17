@@ -5,6 +5,13 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 Top level modules:
 	debouncer_fsm_tb
 
+} {} {}} C:/Users/tkaufman/e155_lab3/src/scanner_fsm.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/e155_lab3/src/scanner_fsm.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module scanner_fsm
+
+Top level modules:
+	scanner_fsm
+
 } {} {}} C:/Users/tkaufman/e155_lab3/src/segment_decoder.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/e155_lab3/src/segment_decoder.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
 -- Compiling module segment_decoder
@@ -32,13 +39,6 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 
 Top level modules:
 	synchronizer
-
-} {} {}} C:/Users/tkaufman/e155_lab3/src/lab3_tk.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/e155_lab3/src/lab3_tk.sv
-Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module lab3_tk
-
-Top level modules:
-	lab3_tk
 
 } {} {}} C:/Users/tkaufman/e155_lab3/src/slide_state.sv {1 {vlog -work work -sv -stats=none C:/Users/tkaufman/e155_lab3/src/slide_state.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021

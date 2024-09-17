@@ -14,13 +14,18 @@ module scanner_fsm_tb();
     initial begin
         nrst = 0; #7; nrst = 1; #5;
 	prev_num = 'h6;
+	row_d = 4'b0; #28;
+	row_d = 4'b0010; #35;
+	row_d = 4'b0; 
+	
+/*prev_num = 'h6;
 	 row_d = 'b1010; #15;
         row_d = 'b0001; #20;
 
 	
         row_d = 'b0100; #15;
         row_d = 'b0010; #20;
-	prev_num = 'ha;
+	prev_num = 'hc;
        	#16 row_d = 'b0000; #24; 
 	 row_d = 'b0010; #5;
         row_d = 'b0010; #100;
@@ -42,7 +47,7 @@ module scanner_fsm_tb();
         row_d = 'b0100; #10;
         row_d = 'b0100; #10;
         row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
+        row_d = 'b0100; #10; */
 	
     end
 endmodule

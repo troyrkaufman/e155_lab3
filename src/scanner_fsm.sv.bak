@@ -104,25 +104,25 @@ module scanner_fsm (input logic clk, nrst,
 			else if (row_d[2] == 'b1 & col0_avoid == 'b1) begin key_pushed = 'h4; col_q = 4'b0001; end
 			else if (row_d[3] == 'b1 & col0_avoid == 'b1) begin key_pushed = 'h1; col_q = 4'b0001; end
 			else col_q = 4'b0001; */
-		col0_base: if (row_d[0] == 'b1) begin key_pushed = 'ha; col_q = 4'b0001; end 
-			else if (row_d[1] == 'b1) begin key_pushed = 'h7; col_q = 4'b0001; end
-			else if (row_d[2] == 'b1 ) begin key_pushed = 'h4; col_q = 4'b0001; end
-			else if (row_d[3] == 'b1 ) begin key_pushed = 'h1; col_q = 4'b0001; end
-			else begin col_q = 4'b0001; key_pushed = prev_num; end;
-		col1_base: if (row_d[0] == 'b1) begin key_pushed = 'h0; col_q = 4'b0010; end 
+		col0_base: if ((row_d[0] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'ha; col_q = 4'b0001; end 
+			else if ((row_d[1] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h7; col_q = 4'b0001; end
+			else if ((row_d[2] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h4; col_q = 4'b0001; end
+			else if ((row_d[3] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h1; col_q = 4'b0001; end
+			else begin col_q = 4'b0001; key_pushed = prev_num; end
+		col1_base: if ((row_d[0] == 'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h0; col_q = 4'b0010; end 
 			else if ((row_d[1] == 'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h8; col_q = 4'b0010; end
-			else if (row_d[2] == 'b1 ) begin key_pushed = 'h5; col_q = 4'b0010; end
+			else if ((row_d[2] == 'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h5; col_q = 4'b0010; end
 			else if ((row_d[3] == 'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1) ) begin key_pushed = 'h2; col_q = 4'b0010; end
 			else begin col_q = 4'b0010; key_pushed = prev_num; end
-		col2_base: if (row_d[0] == 'b1 ) begin key_pushed = 'hb; col_q = 4'b0100; end 
-			else if (row_d[1] == 'b1 ) begin key_pushed = 'h9; col_q = 4'b0100; end
-			else if (row_d[2] == 'b1 ) begin key_pushed = 'h6; col_q = 4'b0100; end
-			else if (row_d[3] == 'b1 ) begin key_pushed = 'h3; col_q = 4'b0100; end
+		col2_base: if ((row_d[0] == 'b1) & (row_d[1] != 1'b1) & (row_d[0] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'hb; col_q = 4'b0100; end 
+			else if ((row_d[1] == 'b1) & (row_d[1] != 1'b1) & (row_d[0] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h9; col_q = 4'b0100; end
+			else if ((row_d[2] == 'b1) & (row_d[1] != 1'b1) & (row_d[0] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h6; col_q = 4'b0100; end
+			else if ((row_d[3] == 'b1) & (row_d[1] != 1'b1) & (row_d[0] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h3; col_q = 4'b0100; end
 			else begin col_q = 4'b0100; key_pushed = prev_num; end
-		col3_base: if (row_d[0] == 'b1 ) begin key_pushed = 'hf; col_q = 4'b0100; end 
-			else if (row_d[1] == 'b1 ) begin key_pushed = 'he; col_q = 4'b0100; end
-			else if (row_d[2] == 'b1 ) begin key_pushed = 'hd; col_q = 4'b0100; end
-			else if (row_d[3] == 'b1 ) begin key_pushed = 'hc; col_q = 4'b0100; end
+		col3_base: if ((row_d[0] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[0] != 1'b1) ) begin key_pushed = 'hf; col_q = 4'b0100; end 
+			else if ((row_d[1] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[0] != 1'b1)) begin key_pushed = 'he; col_q = 4'b0100; end
+			else if ((row_d[2] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[0] != 1'b1)) begin key_pushed = 'hd; col_q = 4'b0100; end
+			else if ((row_d[3] == 'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[0] != 1'b1)) begin key_pushed = 'hc; col_q = 4'b0100; end
 			else begin col_q = 4'b1000; key_pushed = prev_num; end
 		default: begin col_q = 4'b0000; key_pushed = prev_num; end
         endcase

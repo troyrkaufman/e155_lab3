@@ -14,8 +14,14 @@ module synchronizer(input logic clk, nrst,
 
     always_ff@(posedge clk)
         begin
-            n1 <= data_d;
-            data_q <= n1;
+			if (~nrst) begin
+				n1 <= 1'b0;
+				data_q <= 1'b0;
+			end
+			else begin
+				n1 <= data_d;
+				data_q <= n1;
+			end
         end
 
 endmodule

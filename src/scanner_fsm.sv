@@ -8,7 +8,10 @@
 */
 module scanner_fsm (input logic clk, nrst,
                     input logic [3:0] row_d,
-                    output logic [3:0] col_q_out, col_q, row_q);
+                    output logic [3:0] col_q_out, col_q, row_q,
+					output logic debug_led);
+					
+	assign debug_led = counter[20];
 
     typedef enum logic [3:0] {row0_base = 0, row0_pressed = 1, row0_released = 2, row1_base = 3, row1_pressed = 4, row1_released = 5, row2_base = 6, row2_pressed = 7, row2_released =8, row3_base = 9, row3_pressed = 10, row3_released = 11} statetype;
     statetype current_state, next_state;
@@ -17,17 +20,16 @@ module scanner_fsm (input logic clk, nrst,
     logic [20:0] counter;
 
     //State Register
-    always_ff@(posedge clk)
+    always_ff @(posedge clk)
         if(~nrst) begin
             current_state <= row0_base;
             counter <= 0;
         end
-        else if (counter == 'b10010110000) begin
+        else if (counter == 20'b10010110000) begin
             current_state <= next_state;
             counter <= 0;
         end
         else begin
-            current_state <= current_state;
             counter <= counter + 1;
         end
 
@@ -83,7 +85,7 @@ module scanner_fsm (input logic clk, nrst,
             row3_released:
                     next_state = row3_base;
             
-            default: next_state = current_state;
+            default: next_state = row0_base;
         endcase
             
     end
@@ -107,7 +109,7 @@ module scanner_fsm (input logic clk, nrst,
             row3_pressed: begin col_q_out = 4'b0000; col_q = 'b1000; end
             row3_released: begin col_q_out = 4'b0000; col_q = 'b0000; end
 
-            default: col_q_out = 4'b0001;
+            default: begin col_q_out = 4'b0001; col_q = 4'b0000; end
         endcase
         row_q = row_d;
     end    

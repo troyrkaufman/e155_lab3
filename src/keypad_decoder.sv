@@ -1,11 +1,20 @@
 
 
-module keypad_decoder(input logic [3:0] col_d, row_d,
-                      output logic row_q, // needed for debouncer_fsm
-                      output logic [3:0] key_pushed);
+module keypad_decoder(input logic [3:0] row_d,
+                      output logic row_bit);
 
-    logic [1:0] encoded_row_q;
-
+  //  logic [1:0] encoded_row_q;
+	always_comb
+	if (row_d[0] ^ 1'b1 == 1'b1)
+		row_bit = row_d[0];
+	else if (row_d[1] ^ 1'b1 == 1'b1)
+		row_bit = row_d[0];
+	else if (row_d[2] ^ 1'b1 == 1'b1)
+		row_bit = row_d[0];
+	else if (row_d[3] ^ 1'b1 == 1'b1)
+		row_bit = row_d[0];
+	else row_bit = 1'b0;
+/*
     always_comb begin
         case(col_d)
             4'b0001: case (row_d)
@@ -38,12 +47,15 @@ module keypad_decoder(input logic [3:0] col_d, row_d,
                   endcase
             default: begin key_pushed = 'h0; encoded_row_q = 2'b00; end
         endcase
+*/
 
-        if (encoded_row_q == 2'b00) row_q = row_d[0];
-        else if (encoded_row_q == 2'b01) row_q = row_d[1];
-        else if (encoded_row_q == 2'b10) row_q = row_d[2];
-        else if (encoded_row_q == 2'b11) row_q = row_d[3];
-        else row_q = row_d[0];
+/*
+        if (encoded_row_q == 2'b00) row_bit = row_d[0];
+        else if (encoded_row_q == 2'b01) row_bit = row_d[1];
+        else if (encoded_row_q == 2'b10) row_bit = row_d[2];
+        else if (encoded_row_q == 2'b11) row_bit = row_d[3];
+        else row_bit = row_d[0];
+
     end
-
+*/
 endmodule

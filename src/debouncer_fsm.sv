@@ -21,7 +21,7 @@ module debouncer_fsm(input logic clk, nrst,
             current_state <= S0;
             counter <= 0;
         end
-        else if (counter == 'd60) begin //'d60000
+        else if (counter == 'd40) begin //'d60000
             counter <= 0;
             current_state <= next_state;
         end

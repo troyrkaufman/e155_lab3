@@ -1,15 +1,12 @@
+`timescale 1ns/1ns
 
-module scanner_fsm_tb();
-    logic clk, nrst;
-    logic [3:0] row_d;
-    logic btn_press_q, btn_release_q;
-    logic [3:0] col_q, row_q;
+module lab3_tk_tb();
+    logic nrst;
+    logic [3:0] row_d, toggle_col;
+    logic en_right, en_left;
+    logic [6:0] seg;
 
-    lab3_tk dut(clk, nrst, row_d, col_q_out, col_q, row_q);
-
-    always begin
-        clk = 1; #5; clk = 0; # 5;
-    end
+    lab3_tk dut(nrst, row_d, toggle_col,en_right, en_left, seg);
 
     initial begin
         nrst = 0; #22; nrst = 1; #5;
@@ -25,13 +22,13 @@ module scanner_fsm_tb();
         row_d = 'b0100; #10;
         row_d = 'b0100; #10;
         row_d = 'b0001; #10;
-        row_d = 'b1000; #10;
+        row_d = 'b1000; #1000;
         row_d = 'b1000; #10;
         row_d = 'b1000; #10;
         row_d = 'b1000; #10;
         row_d = 'b1000; #10;
         row_d = 'b0001; #10;
-        row_d = 'b0010; #10;
+        row_d = 'b0010; #1000;
         row_d = 'b0100; #10;
         row_d = 'b0100; #10;
         row_d = 'b0100; #10;

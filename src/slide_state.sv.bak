@@ -8,9 +8,21 @@ module slide_state(input logic clk, nrst,
 	//logic key_wait;
 	//logic keep_num;
 	//logic [3:0] ex;
+	//logic [3:0] current_num_reg, prev_num_reg;
 
-    always_ff@(posedge clk)
-        begin 
+	always_ff@ (posedge clk)
+		if (~nrst) begin 
+		current_num <= 4'b0000;
+		prev_num <= 4'b0000;
+		else if (pulse_en) begin
+		prev_num <= current_num;
+		current_num <= key_pushed;
+		end
+		else prev_num <= prev_num;
+		end
+		
+
+   /* always_ff@(posedge clk)
             if (~nrst) begin
                 current_num <= 'b0000;
                 prev_num <= 'b0000;
@@ -19,8 +31,8 @@ module slide_state(input logic clk, nrst,
                 current_num <= key_pushed;
                 prev_num <= prev_num;
             end
-		else 
-		prev_num <= current_num;
+	else 
+	prev_num <= current_num;
 		/*
 	logic [3:0] next_cur, cur_holder, prev_holder;
 

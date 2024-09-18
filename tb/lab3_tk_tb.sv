@@ -1,39 +1,24 @@
 `timescale 1ns/1ns
 
 module lab3_tk_tb();
-    logic nrst;
+    logic int_osc, nrst;
     logic [3:0] row_d, column_signals;
     logic en_right, en_left;
     logic [6:0] seg;
 
-    lab3_tk dut(nrst, row_d, column_signals ,en_right, en_left, seg);
+    lab3_tk dut(int_osc, nrst, row_d, column_signals ,en_right, en_left, seg);
+
+	always begin
+		int_osc = 1; #5; int_osc = 0; #5;
+	end
 
     initial begin
         nrst = 0; #22; nrst = 1; #5;
 
-        row_d = 'b0001; #10;
-        row_d = 'b0010; #70;
-        row_d = 'b0000; #20;
-        row_d = 'b0000; #10;
-        row_d = 'b0100; #1500;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0001; #10;
-        row_d = 'b1000; #1000;
-        row_d = 'b1000; #10;
-        row_d = 'b1000; #10;
-        row_d = 'b1000; #10;
-        row_d = 'b1000; #10;
-        row_d = 'b0001; #10;
-        row_d = 'b0010; #1000;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #2000;
-        row_d = 'b0100; #10;
+        row_d = 4'b0000; #107;
+	row_d = 4'b0001; #20;
+	row_d = 4'b0100; #35;
+	row_d = 4'b0000;
 
     end
 endmodule

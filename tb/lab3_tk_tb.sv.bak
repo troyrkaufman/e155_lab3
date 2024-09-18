@@ -15,29 +15,11 @@ module lab3_tk_tb();
     initial begin
         nrst = 0; #22; nrst = 1; #5;
 
-        row_d = 'b0001; #10;
-        row_d = 'b0010; #70;
-        row_d = 'b0000; #20;
-        row_d = 'b0000; #10;
-        row_d = 'b0100; #1500;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0001; #10;
-        row_d = 'b1000; #1000;
-        row_d = 'b1000; #10;
-        row_d = 'b1000; #10;
-        row_d = 'b1000; #10;
-        row_d = 'b1000; #10;
-        row_d = 'b0001; #10;
-        row_d = 'b0010; #1000;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #10;
-        row_d = 'b0100; #2000;
-        row_d = 'b0100; #10;
+        row_d = 4'b0000; #107;
+	row_d = 4'b0001; #550;
+	row_d = 4'b0000; #15;
+	row_d = 4'b0100; #35;
+	row_d = 4'b0000;
 
     end
 endmodule

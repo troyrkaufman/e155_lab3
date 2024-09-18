@@ -15,10 +15,10 @@ module scanner_fsm_tb();
         nrst = 0; #7; nrst = 1; #5;
 	prev_num = 'h6;
 	row_d = 4'b0; #28;
-	row_d = 4'b0010; #35;
-	row_d = 4'b0; 
-	prev_num = 'h3; #5;
-	row_d = 4'b1000;
+	row_d = 4'b0001; #35;
+	row_d = 4'b0; # 15
+	prev_num = 'h3; #4;
+	row_d = 4'b1000; 
 	
 /*prev_num = 'h6;
 	 row_d = 'b1010; #15;

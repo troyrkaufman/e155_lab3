@@ -16,8 +16,8 @@ module scanner_fsm_tb();
 	prev_num = 'h6;
 	row_d = 4'b0; #28;
 	row_d = 4'b0001; #35;
-	row_d = 4'b0; 
-	prev_num = 'h3; #4;
+	//row_d = 4'b0; #45;
+	//prev_num = 'h5; #20;
 	row_d = 4'b1000; 
 	
 /*prev_num = 'h6;

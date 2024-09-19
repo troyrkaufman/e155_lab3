@@ -8,7 +8,7 @@ module lab3_tk(input logic int_osc, nrst,
                output logic en_right, en_left,
                output logic [6:0] seg);
     
-    //logic int_osc;
+   // logic int_osc;
     
     logic [3:0] row_signals;
     logic row_pressed;
@@ -17,11 +17,7 @@ module lab3_tk(input logic int_osc, nrst,
 	logic pulse_en;
 	logic [3:0] current_num, prev_num;
 	logic current_hex;
-	//logic en_right, en_left;
 	logic [3:0] sync_data;
-	
-    // Bit swizzling
-    assign sync_data = {sync_data3, sync_data2, sync_data1, sync_data0};
 	 
     // High-speed oscillator
     //LSOSC ls_osc (.CLKLFPU(1'b1), .CLKLFEN(1'b1), .CLKLF(int_osc));
@@ -30,8 +26,11 @@ module lab3_tk(input logic int_osc, nrst,
     synchronizer sync1(.clk(int_osc), .nrst(nrst), .data_d(row_d[1]), .data_q(sync_data1));
     synchronizer sync2(.clk(int_osc), .nrst(nrst), .data_d(row_d[2]), .data_q(sync_data2));
     synchronizer sync3(.clk(int_osc), .nrst(nrst), .data_d(row_d[3]), .data_q(sync_data3));
+	
+	 // Bit swizzling
+    assign sync_data = {sync_data3, sync_data2, sync_data1, sync_data0};
 
-    scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(row_d), .prev_num(prev_num), .col_q(column_signals), .row_q(row_signals), .key_pushed(key_pushed)); 
+    scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(sync_data), .prev_num(prev_num), .col_q(column_signals), .row_q(row_signals), .key_pushed(key_pushed)); 
 
     keypad_decoder keydec(.row_d(row_signals), .row_bit(row_pressed));
     debouncer_fsm dbnc(.clk(int_osc), .nrst(nrst), .row_d(row_pressed), .pulse_en(pulse_en));

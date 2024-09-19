@@ -18,7 +18,7 @@ module lab3_tk_tb();
         row_d = 4'b0000; #107;
 	row_d = 4'b0001; #550;
 	row_d = 4'b0000; #15;
-	row_d = 4'b0100; #600;
+	row_d = 4'b0110; #600;
 	row_d = 4'b0000;
 
     end

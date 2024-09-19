@@ -5,7 +5,7 @@ module scanner_fsm_tb();
     logic [3:0] row_d, prev_num;
     logic [3:0] col_q, row_q, key_pressed;
 
-    scanner_fsm dut(clk, nrst, row_d, prev_num, col_q, row_q, key_pressed);
+    scanner_fsm dut(clk, nrst, row_d, col_q, row_q, key_pressed);
 
     always begin
         clk = 1; #5; clk = 0; # 5;
@@ -13,11 +13,9 @@ module scanner_fsm_tb();
 
     initial begin
         nrst = 0; #7; nrst = 1; #5;
-	prev_num = 'h6;
 	row_d = 4'b0; #28;
-	row_d = 4'b0001; #35;
+	row_d = 4'b0001; #40;
 	row_d = 4'b0; #45;
-	//prev_num = 'h5; #20;
 	row_d = 4'b1000; 
 	
 /*prev_num = 'h6;

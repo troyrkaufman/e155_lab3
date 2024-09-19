@@ -15,10 +15,12 @@ module lab3_tk_tb();
     initial begin
         nrst = 0; #22; nrst = 1; #5;
 
-        row_d = 4'b0000; #107;
+        row_d = 4'b0000; #120;
 	row_d = 4'b0001; #550;
 	row_d = 4'b0000; #30;
-	row_d = 4'b010; #600;
+	row_d = 4'b010; #613;
+	row_d = 4'b0000; #23;
+	row_d = 4'b0100; #650;
 	row_d = 4'b0000;
 
     end

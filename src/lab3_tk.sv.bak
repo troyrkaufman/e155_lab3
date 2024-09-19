@@ -30,7 +30,7 @@ module lab3_tk(input logic int_osc, nrst,
 	 // Bit swizzling
     assign sync_data = {sync_data3, sync_data2, sync_data1, sync_data0};
 
-    scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(row_data), .prev_num(prev_num), .col_q(column_signals), .row_q(row_signals), .key_pushed(key_pushed)); 
+    scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(sync_data), .col_q(column_signals), .row_q(row_signals), .key_pushed(key_pushed)); 
 
     keypad_decoder keydec(.row_d(row_signals), .row_bit(row_pressed));
     debouncer_fsm dbnc(.clk(int_osc), .nrst(nrst), .row_d(row_pressed), .pulse_en(pulse_en));

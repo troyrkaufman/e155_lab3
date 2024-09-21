@@ -2,7 +2,7 @@
 
 module scanner_fsm_tb();
     logic clk, nrst;
-    logic [3:0] row_d, prev_num;
+    logic [3:0] row_d;
     logic [3:0] col_q, row_q, key_pressed;
 
     scanner_fsm dut(clk, nrst, row_d, col_q, row_q, key_pressed);

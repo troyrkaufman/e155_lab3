@@ -22,6 +22,11 @@ module lab3_tk_tb();
 	row_d = 4'b0000; #23;
 	row_d = 4'b0100; #650;
 	row_d = 4'b0000;
+	row_d = 4'b1001; #45;
+	row_d = 4'b0100; #40;
+	row_d = 4'b0000; #25;
+	row_d = 4'b1000; #80;
+	row_d = 4'b0000;
 
     end
 endmodule

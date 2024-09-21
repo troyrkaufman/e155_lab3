@@ -7,7 +7,7 @@
 */
 
 module debouncer_fsm(input logic clk, nrst,
-                    input logic row_d,
+                    input logic row_d, //check_new,
                     output logic pulse_en);
     
     typedef enum logic [1:0] {S0, S1, S2, S3} statetype;

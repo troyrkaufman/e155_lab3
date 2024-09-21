@@ -24,7 +24,7 @@ module display_controller(input logic clk, nrst,
 
     logic [20:0] counter;
 
-    parameter counter_limit = 'd50000;
+    parameter counter_limit = 'd60;
 
     // Build State Registers
     always_ff@(posedge clk)

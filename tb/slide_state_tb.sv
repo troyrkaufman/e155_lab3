@@ -16,10 +16,10 @@ module slide_state_tb();
 
         key_pushed = 'h4; pulse_en = 0; #10;
         key_pushed = 'ha; #5;
-        key_pushed = 'h6; #1; pulse_en = 1; #13;
-        key_pushed = 'h0; pulse_en = 0; #15; 
-        key_pushed = 'h4;
-	key_pushed = 'h8; pulse_en = 1; #25;
+        key_pushed = 'h6; #1; pulse_en = 1; #10;
+        key_pushed = 'h0; pulse_en = 0; #20; 
+        key_pushed = 'h4; #15; pulse_en = 1; #10; pulse_en = 0;
+	key_pushed = 'h8; #50;
 	key_pushed = 'h1; pulse_en = 0; 
 
     end

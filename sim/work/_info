@@ -11,29 +11,29 @@ cModel Technology
 dC:/lscc/radiant/3.2/modeltech/win32loem
 vdebouncer_fsm
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1726972643
+Z1 !s110 1727043368
 !i10b 1
-!s100 ZL^H]e^8O`]ZYioPnKoMe1
-I7H4Je31FiJPU10blSFOAZ1
+!s100 Bo9fb<zbZWaHcD0h:GjPa3
+I0dMDz>E:iTmYl<;HjWPF61
 S1
 Z2 dC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/sim
-Z3 w1726968839
+w1727041806
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv
-!i122 2562
+!i122 2664
 L0 9 41
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OT;L;2021.4;73
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2021.4;73
 r1
 !s85 0
 31
-Z6 !s108 1726972643.000000
+Z5 !s108 1727043368.000000
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv|
 !s101 -O0
 !i113 1
-Z7 o-work work -sv -O0
-Z8 tCvgOpt 0
+Z6 o-work work -sv -O0
+Z7 tCvgOpt 0
 vdebouncer_fsm_tb
 R0
 R1
@@ -42,48 +42,48 @@ R1
 I^F2R=`5zNmS?nX>IO=nl_1
 S1
 R2
-Z9 w1726773944
+Z8 w1726773944
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv
-!i122 2570
+!i122 2672
 L0 3 26
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vdisplay_controller
 R0
 R1
 !i10b 1
-!s100 JbMcLGgb^6:^1RPjK?AG73
-INXkj?;ZSZlzo>0[o_m?IT2
+!s100 jfkV@2<Xd<=e90KGmlKRQ1
+IzR1Lm3oT>76D7Eab2TOUj0
 S1
 R2
-R9
+w1727028894
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv
-!i122 2563
+!i122 2665
 L0 18 74
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vkeypad_decoder
 R0
 R1
@@ -92,23 +92,23 @@ R1
 I_10mcc6NhfKa3]^:ZoEDj2
 S1
 R2
-R3
+Z9 w1726968839
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv
-!i122 2564
+!i122 2666
 L0 3 15
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vkeypad_decoder_tb
 R0
 R1
@@ -120,95 +120,95 @@ R2
 Z10 w1726609234
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv
-!i122 2571
+!i122 2673
 L0 3 42
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vlab3_tk
 R0
 R1
 !i10b 1
-!s100 XK0LOWf>>BTi>d_H:23<_2
-I38DzT?J^fh4DfD20AVnS22
+!s100 4a2Q:5nE3_>nXJH5Ok6??2
+IdRPXOcSV[NS4g`[BlQKRB3
 S1
 R2
-w1726972637
+w1727042776
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv
-!i122 2565
-L0 5 54
+!i122 2667
+L0 5 70
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vlab3_tk_tb
 R0
 R1
 !i10b 1
-!s100 U984m7``QD^bjmZgE=IDR3
-IY^O>HZKjZTmSNNG@2g8PM0
+!s100 _4ekOFUK1]I_9@GAH;2e>3
+IaPo<92_BIS?0]Wg<ghScB3
 S1
 R2
-R3
+w1727043364
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv
-!i122 2572
+!i122 2674
 Z11 L0 3 25
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vscanner_fsm
 R0
 R1
 !i10b 1
-!s100 O7X9B[@L16jkKQ]<k_86D3
-IkkzJTRff@76_P2oXMXd0^1
+!s100 9:LIDh3gVEz7<dn14PDDg2
+IdeN:Q_;;?WQOZ;inh4KAe1
 S1
 R2
-w1726971187
+w1726972866
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv
-!i122 2566
-L0 9 119
+!i122 2668
+L0 9 118
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vscanner_fsm_tb
 R0
 R1
@@ -217,23 +217,23 @@ R1
 ILC`PO2oZ0D_BXm`HE2Z^b3
 S1
 R2
-R3
+R9
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv
-!i122 2573
+!i122 2675
 L0 3 51
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vsegment_decoder
 R0
 R1
@@ -245,20 +245,20 @@ R2
 R10
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv
-!i122 2567
+!i122 2669
 L0 11 32
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vslide_state
 R0
 R1
@@ -267,23 +267,23 @@ R1
 I5LATmnlPSJVLO]6JTlPXI2
 S1
 R2
-R9
+R8
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv
-!i122 2568
+!i122 2670
 L0 3 21
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vslide_state_tb
 R0
 R1
@@ -292,23 +292,23 @@ R1
 Ii4X]ST>bGDX6gb5M:_24N3
 S1
 R2
-R9
+R8
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv
-!i122 2574
+!i122 2676
 R11
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vsynchronizer
 R0
 R1
@@ -320,17 +320,17 @@ R2
 R10
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv
-!i122 2569
+!i122 2671
 L0 9 19
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R5
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv|
 !s101 -O0
 !i113 1
+R6
 R7
-R8

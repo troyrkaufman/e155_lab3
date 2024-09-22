@@ -2,14 +2,13 @@
 // Email: tkaufman@hmc.edu
 // Date: 
 
-module lab3_tk(input logic  nrst,
+module lab3_tk(input logic  new_clock, nrst,
                input logic [3:0] row_d,
                output logic [3:0] column_signals,
                output logic en_right, en_left,
-               output logic [6:0] seg,
-			   output debug_led, state1, state2);
+               output logic [6:0] seg);
     
-    logic int_osc;
+    //logic int_osc;
     
     logic [3:0] row_signals;
     logic row_pressed;
@@ -21,13 +20,14 @@ module lab3_tk(input logic  nrst,
 	logic [3:0] sync_data;
 	logic [3:0] sync_data_out;
 	logic [3:0] col_q;
-	 
+	logic [3:0] row_bar;
+	logic [3:0] column_sig;
     // High-speed oscillator
-    LSOSC ls_osc (.CLKLFPU(1'b1), .CLKLFEN(1'b1), .CLKLF(int_osc));
+    //LSOSC ls_osc (.CLKLFPU(1'b1), .CLKLFEN(1'b1), .CLKLF(int_osc));
 	
-	logic new_clock;
+	//logic new_clock;
 	logic [11:0] counter;
-	
+	/*
 	always_ff @(posedge int_osc)
 		if (~nrst) counter <= 0; 
 		else if (counter >= 'd20) begin
@@ -38,8 +38,9 @@ module lab3_tk(input logic  nrst,
 			new_clock <= new_clock;
 			counter <= counter + 1; 
 		end 
-			
-    
+			*/
+    assign row_bar = ~row_d;
+
     synchronizer sync0(.clk(new_clock), .nrst(nrst), .data_d(row_d[0]), .data_q(sync_data0));
     synchronizer sync1(.clk(new_clock), .nrst(nrst), .data_d(row_d[1]), .data_q(sync_data1));
     synchronizer sync2(.clk(new_clock), .nrst(nrst), .data_d(row_d[2]), .data_q(sync_data2));
@@ -55,7 +56,9 @@ module lab3_tk(input logic  nrst,
     assign sync_data = {sync_data3, sync_data2, sync_data1, sync_data0};
 	//assign column_signals = {sync_data3_out, sync_data2_out, sync_data1_out, sync_data0_out};
 
-    scanner_fsm scan(.clk(new_clock), .nrst(nrst), .row_d(row_d), .col_q(column_signals), .row_q(row_signals), .key_pushed(key_pushed), .state1(state1), .state2(state2)); 
+    scanner_fsm scan(.clk(new_clock), .nrst(nrst), .row_d(row_bar), .col_q(column_sig), .row_q(row_signals), .key_pushed(key_pushed), .state1(state1), .state2(state2)); 
+	
+	assign column_signals = ~column_sig;
 
     keypad_decoder keydec(.row_d(row_signals), .row_bit(row_pressed));
     debouncer_fsm dbnc(.clk(new_clock), .nrst(nrst), .row_d(row_pressed), .pulse_en(pulse_en));
@@ -63,7 +66,6 @@ module lab3_tk(input logic  nrst,
     display_controller dcon(.clk(new_clock), .nrst(nrst), .current_hex(current_hex), .hex1_num(en_right), .hex2_num(en_left));
     segment_decoder segdec(.current_hex(current_hex), .s1(current_num), .s2(prev_num), .seg(seg));
 	
-	assign debug_led = row_d[0];
 	
 	
 	

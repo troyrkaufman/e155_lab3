@@ -8,10 +8,13 @@
 */
 module scanner_fsm (input logic clk, nrst,
                     input logic [3:0] row_d,
-                    output logic [3:0] col_q, row_q, key_pushed);
+		    output logic key_press,
+                    output logic [3:0] col_q);
 
     typedef enum logic [3:0] {col0_base = 4'd0, col0_pressed = 4'd1, col0_released = 4'd2, col1_base = 4'd3, col1_pressed = 4'd4, col1_released = 4'd5, col2_base = 4'd6, col2_pressed = 4'd7, col2_released = 4'd8, col3_base = 4'd9, col3_pressed = 4'd10, col3_released = 4'd11} statetype;
     statetype current_state, next_state;
+	
+	//logic [3:0] key_retain; 
 
     //State Register
     always_ff @(posedge clk)
@@ -78,41 +81,17 @@ module scanner_fsm (input logic clk, nrst,
         endcase
             
     end
-
-    //Output logic
-    always_comb 
-        case(current_state)
-			col0_base: if ((row_d[0] == 1'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'ha; col_q = 4'b0000; end 
-				else if ((row_d[1] == 1'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h7; col_q = 4'b0000; end
-				else if ((row_d[2] == 1'b1) & (row_d[0] != 1'b1) & (row_d[1] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h4; col_q = 4'b0000; end
-				else if ((row_d[3] == 1'b1) & (row_d[0] != 1'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1)) begin key_pushed = 'h1; col_q = 4'b0000; end
-				else begin col_q = 4'b0001;  key_pushed = key_pushed; end
-			col1_base: if ((row_d[0] == 1'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h0; col_q = 4'b0000; end 
-				else if ((row_d[1] == 1'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h8; col_q = 4'b0000; end
-				else if ((row_d[2] == 1'b1) & (row_d[0] != 1'b1) & (row_d[1] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h5; col_q = 4'b0000; end
-				else if ((row_d[3] == 1'b1) & (row_d[0] != 1'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) ) begin key_pushed = 'h2; col_q = 4'b0000; end
-				else begin col_q = 4'b0010; key_pushed = key_pushed; end
-			col2_base: if ((row_d[0] == 1'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'hb; col_q = 4'b0000; end 
-				else if ((row_d[1] == 1'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h9; col_q = 4'b0000; end
-				else if ((row_d[2] == 1'b1) & (row_d[0] != 1'b1) & (row_d[1] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'h6; col_q = 4'b0000; end
-				else if ((row_d[3] == 1'b1) & (row_d[1] != 1'b1) & (row_d[0] != 1'b1) & (row_d[2] != 1'b1)) begin key_pushed = 'h3; col_q = 4'b0000; end
-				else begin col_q = 4'b0100; key_pushed = key_pushed; end
-			col3_base: if ((row_d[0] == 1'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[3] != 1'b1) ) begin key_pushed = 'hf; col_q = 4'b0000; end 
-				else if ((row_d[1] == 1'b1) & (row_d[0] != 1'b1) & (row_d[3] != 1'b1) & (row_d[2] != 1'b1)) begin key_pushed = 'he; col_q = 4'b0000; end
-				else if ((row_d[2] == 1'b1) & (row_d[1] != 1'b1) & (row_d[0] != 1'b1) & (row_d[3] != 1'b1)) begin key_pushed = 'hd; col_q = 4'b0000; end
-				else if ((row_d[3] == 1'b1) & (row_d[1] != 1'b1) & (row_d[2] != 1'b1) & (row_d[0] != 1'b1)) begin key_pushed = 'hc; col_q = 4'b0000; end
-				else begin col_q = 4'b1000; key_pushed = key_pushed; end
-			col0_pressed: begin col_q = 4'b0000; key_pushed = key_pushed; end
-			col1_pressed: begin col_q = 4'b0000; key_pushed = key_pushed;  end
-			col2_pressed: begin col_q = 4'b0000; key_pushed = key_pushed; end
-			col3_pressed: begin col_q = 4'b0000; key_pushed = key_pushed; end
-			col0_released: begin col_q = 4'b0000; key_pushed = key_pushed;  end
-			col1_released: begin col_q = 4'b0000; key_pushed = key_pushed;  end
-			col2_released: begin col_q = 4'b0000; key_pushed = key_pushed;  end
-			col3_released: begin col_q = 4'b0000; key_pushed = key_pushed; end
-			default: begin col_q = 4'b0001; key_pushed = 4'b0000; end 
-        endcase
-		  
+	
+	// Output logic
+	always_comb 
+		case(current_state)
+		col0_base: begin col_q = 4'b0001; key_press = 1'b0; end
+		col1_base: begin col_q = 4'b0010; key_press = 1'b0; end
+		col2_base: begin col_q = 4'b0100; key_press = 1'b0; end
+		col3_base: begin col_q = 4'b1000; key_press = 1'b0; end
+		default: begin col_q = 4'b0000; key_press = 1'b1; end
+		endcase
 		
-		assign  row_q = row_d;
 endmodule
+		
+	

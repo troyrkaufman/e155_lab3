@@ -11,54 +11,54 @@ cModel Technology
 dC:/lscc/radiant/3.2/modeltech/win32loem
 vdebouncer_fsm
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1727071629
+Z1 !s110 1727220838
 !i10b 1
 !s100 ZL^H]e^8O`]ZYioPnKoMe1
 I7H4Je31FiJPU10blSFOAZ1
 S1
 Z2 dC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/sim
-w1727071625
+Z3 w1727122793
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv
-!i122 2617
+!i122 2708
 L0 9 41
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 OT;L;2021.4;73
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OT;L;2021.4;73
 r1
 !s85 0
 31
-Z5 !s108 1727071629.000000
+Z6 !s108 1727220838.000000
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/debouncer_fsm.sv|
 !s101 -O0
 !i113 1
-Z6 o-work work -sv -O0
-Z7 tCvgOpt 0
+Z7 o-work work -sv -O0
+Z8 tCvgOpt 0
 vdebouncer_fsm_tb
 R0
-R1
+Z9 !s110 1727220839
 !i10b 1
 !s100 >7DCIk:3I=:OhJI<M3>?<3
 I^F2R=`5zNmS?nX>IO=nl_1
 S1
 R2
-Z8 w1726773944
+Z10 w1726773944
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv
-!i122 2625
+!i122 2716
 L0 3 26
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+Z11 !s108 1727220839.000000
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vdisplay_controller
 R0
 R1
@@ -70,148 +70,148 @@ R2
 w1727062320
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv
-!i122 2618
+!i122 2709
 L0 18 74
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/display_controller.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vkeypad_decoder
 R0
 R1
 !i10b 1
-!s100 <Odne[Y=8z2kT>dAbG1j40
-IAzdh=XKh9NV3H=4?2TAmg1
+!s100 YX0lOU9QcbLVKW3MI79oR1
+IMJ9ia098CC9<Qn7QZAK4>2
 S1
 R2
-w1727069081
+w1727217528
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv
-!i122 2619
-Z9 L0 3 25
-R3
+!i122 2710
+Z12 L0 3 25
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/keypad_decoder.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vkeypad_decoder_tb
 R0
-R1
+R9
 !i10b 1
 !s100 Mo_nCUDUDJ[ZYCfL`:MHH1
 Ihf@5k=;D?hBL`7`EbWh@42
 S1
 R2
-Z10 w1726609234
+Z13 w1726609234
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv
-!i122 2626
+!i122 2717
 L0 3 42
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vlab3_tk
 R0
-R1
+R9
 !i10b 1
-!s100 384BW9T6W;kWWoU5WLcBS0
-I]dW=e8G981GS_FzLg:F0O0
+!s100 QMgmTcCFeLTVdc8`]B?l60
+I2ZZUA412Z^B?:?G2AX_Rz0
 S1
 R2
-w1727069122
-8C:\Users\tkaufman\e155_labs\lab3_tk\e155_lab3\src\lab3_tk.sv
-FC:\Users\tkaufman\e155_labs\lab3_tk\e155_lab3\src\lab3_tk.sv
-!i122 2620
-L0 5 64
-R3
+w1727218893
+8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv
+FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv
+!i122 2711
+L0 5 65
 R4
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:\Users\tkaufman\e155_labs\lab3_tk\e155_lab3\src\lab3_tk.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\tkaufman\e155_labs\lab3_tk\e155_lab3\src\lab3_tk.sv|
+R6
+!s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/lab3_tk.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vlab3_tk_tb
 R0
-R1
+R9
 !i10b 1
-!s100 7a8g2Z?SE3NddP08;;kVz2
-I=l7ezJdM3OedWlO1Z@YiC2
+!s100 IfjcgL:P;n1zL:Qoki:202
+Ib^zV0KTL=DZLhYDiKdOn<2
 S1
 R2
-w1727069686
+w1727220827
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv
-!i122 2627
-R9
-R3
+!i122 2718
+L0 3 28
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/lab3_tk_tb.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vscanner_fsm
 R0
-R1
+R9
 !i10b 1
-!s100 eO0UmENPFgkXH`QI5i33P2
-IzWcc]][5dEVmcWh5dKMQB1
+!s100 Z83Y=gMf=`fcDCTbU:3Dg0
+IKUBVZFX02BBPNbDNe;2^m0
 S1
 R2
-w1727071618
+w1727217745
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv
-!i122 2621
+!i122 2712
 L0 9 95
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/scanner_fsm.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vscanner_fsm_tb
 R0
-R1
+R9
 !i10b 1
 !s100 kVLAQU2PbD40Wm_1_X]i]1
 ILC`PO2oZ0D_BXm`HE2Z^b3
@@ -220,117 +220,117 @@ R2
 w1726968839
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv
-!i122 2628
+!i122 2719
 L0 3 51
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vsegment_decoder
 R0
-R1
+R9
 !i10b 1
 !s100 Ynf^@ONXOkB<1>[AORTEZ0
 I1LB[QF]2B2Yf@_?fP>C7B1
 S1
 R2
-R10
+R13
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv
-!i122 2622
+!i122 2713
 L0 11 32
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/segment_decoder.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vslide_state
 R0
-R1
+R9
 !i10b 1
 !s100 Gn[`hlPFkfJ9AO6J6cK3i0
 IMROAZb6mRH2^hW9ndDAK?2
 S1
 R2
-w1727068297
+R3
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv
-!i122 2623
+!i122 2714
 L0 3 16
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/slide_state.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vslide_state_tb
 R0
-R1
+R9
 !i10b 1
 !s100 8jHhn__fe^9`4[0EKJl=X2
 Ii4X]ST>bGDX6gb5M:_24N3
 S1
 R2
-R8
+R10
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv
-!i122 2629
-R9
-R3
+!i122 2720
+R12
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vsynchronizer
 R0
-R1
+R9
 !i10b 1
 !s100 XOlRY9@UE`[gL;l[c:l7n2
 IFe[LJgH4P9<Dn^RAzDH^Y1
 S1
 R2
-R10
+R13
 8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv
 FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv
-!i122 2624
+!i122 2715
 L0 9 19
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/src/syncrhonizer.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8

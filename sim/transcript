@@ -1,0 +1,163 @@
+# 0 compiles, 13 failed with no errors.
+# Compile of debouncer_fsm.sv was successful.
+# Compile of display_controller.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of lab3_tk.sv was successful.
+# Compile of scanner_fsm.sv was successful.
+# Compile of segment_decoder.sv was successful.
+# Compile of slide_state.sv was successful.
+# Compile of syncrhonizer.sv was successful.
+# Compile of lab3_tk_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim
+# vsim -gui work.lab3_tk_tb -t ns 
+# Start time: 21:55:28 on Sep 24,2024
+# Loading sv_std.std
+# Loading work.lab3_tk_tb
+# Loading work.lab3_tk
+# Loading work.scanner_fsm
+# Loading work.keypad_decoder
+# Loading work.debouncer_fsm
+# Loading work.slide_state
+# Loading work.display_controller
+# Loading work.segment_decoder
+do wave.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: tkaufman  Hostname: JFMZ0R3  ProcessID: 21360
+#           Attempting to use alternate WLF file "./wlftznnbm0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftznnbm0
+# ** UI-Msg: (vish-4014) No objects found matching '/lab3_tk_tb/dut/scan/key_pushed'.
+# Executing ONERROR command at macro ./wave.do line 7
+add wave -position 3  sim:/lab3_tk_tb/dut/col_dec
+add wave -position 3  sim:/lab3_tk_tb/dut/col_q
+add wave -position 6  sim:/lab3_tk_tb/dut/int_osc
+add wave -position 7  sim:/lab3_tk_tb/dut/key_pushed
+add wave -position 3  sim:/lab3_tk_tb/dut/row_bar
+run 2800 ns
+# Compile of keypad_decoder.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keypad_decoder
+run 2800 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of keypad_decoder.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keypad_decoder
+run 2800 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart -f
+run 5000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of debouncer_fsm.sv was successful.
+# Compile of display_controller.sv was successful.
+# Compile of keypad_decoder.sv failed with 1 errors.
+# Compile of lab3_tk.sv was successful.
+# Compile of scanner_fsm.sv was successful.
+# Compile of segment_decoder.sv was successful.
+# Compile of slide_state.sv was successful.
+# Compile of syncrhonizer.sv was successful.
+# Compile of lab3_tk_tb.sv was successful.
+# 9 compiles, 1 failed with 1 error.
+# Compile of keypad_decoder.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.lab3_tk_tb
+# Loading work.lab3_tk
+# Loading work.scanner_fsm
+# Loading work.keypad_decoder
+# Loading work.debouncer_fsm
+# Loading work.slide_state
+# Loading work.display_controller
+# Loading work.segment_decoder
+run 5000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of debouncer_fsm.sv was successful.
+# Compile of display_controller.sv was successful.
+# Compile of keypad_decoder.sv failed with 1 errors.
+# Compile of lab3_tk.sv was successful.
+# Compile of scanner_fsm.sv was successful.
+# Compile of segment_decoder.sv was successful.
+# Compile of slide_state.sv was successful.
+# Compile of syncrhonizer.sv was successful.
+# Compile of lab3_tk_tb.sv was successful.
+# 9 compiles, 1 failed with 1 error.
+# Compile of keypad_decoder.sv failed with 1 errors.
+# Compile of debouncer_fsm.sv was successful.
+# Compile of display_controller.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of lab3_tk.sv was successful.
+# Compile of scanner_fsm.sv was successful.
+# Compile of segment_decoder.sv was successful.
+# Compile of slide_state.sv was successful.
+# Compile of syncrhonizer.sv was successful.
+# Compile of lab3_tk_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.lab3_tk_tb
+# Loading work.lab3_tk
+# Loading work.scanner_fsm
+# Loading work.keypad_decoder
+# Loading work.debouncer_fsm
+# Loading work.slide_state
+# Loading work.display_controller
+# Loading work.segment_decoder
+run 5000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of debouncer_fsm.sv was successful.
+# Compile of display_controller.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of lab3_tk.sv was successful.
+# Compile of scanner_fsm.sv was successful.
+# Compile of segment_decoder.sv was successful.
+# Compile of slide_state.sv was successful.
+# Compile of syncrhonizer.sv was successful.
+# Compile of lab3_tk_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.lab3_tk_tb
+# Loading work.lab3_tk
+# Loading work.scanner_fsm
+# Loading work.keypad_decoder
+# Loading work.debouncer_fsm
+# Loading work.slide_state
+# Loading work.display_controller
+# Loading work.segment_decoder
+run 5000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of keypad_decoder.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keypad_decoder
+run 5000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+restart -f
+run 5000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 

@@ -50,7 +50,7 @@ module lab3_tk(input logic  int_osc, nrst,
     scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(row_bar), .key_press(key_press), .col_q(column_sig), .col_dec(col_dec)); 
 
     // Decodes the key pushed
-    keypad_decoder keydec(.row_dec(row_bar), .col_dec(col_dec), .row_bit(row_pressed), .key_pushed(key_pushed));
+    keypad_decoder keydec(.row_dec(row_bar), .col_dec(col_dec), .col_q(column_sig), .row_bit(row_pressed), .key_pushed(key_pushed));
 
     // Debounes the row signal that was pushed
     debouncer_fsm dbnc(.clk(int_osc), .nrst(nrst), .row_d(row_pressed), .pulse_en(pulse_en));

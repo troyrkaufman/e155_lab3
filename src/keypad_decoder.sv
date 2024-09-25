@@ -1,11 +1,11 @@
 
 
-module keypad_decoder(input logic [3:0] row_dec, col_dec,
+module keypad_decoder(input logic [3:0] row_dec, col_dec, col_q,
 		      output logic row_bit,
 		      output logic [3:0] key_pushed);
 
 	always_comb
-		case ({col_dec, row_dec})
+		casex ({col_dec, row_dec})
 			8'b00010001: begin key_pushed = 'h1; row_bit = row_dec[0]; end
 			8'b00010010: begin key_pushed = 'h4; row_bit = row_dec[1]; end
 			8'b00010100: begin key_pushed = 'h7; row_bit = row_dec[2]; end
@@ -22,6 +22,9 @@ module keypad_decoder(input logic [3:0] row_dec, col_dec,
 			8'b10000010: begin key_pushed = 'hB; row_bit = row_dec[1]; end
 			8'b10000100: begin key_pushed = 'hC; row_bit = row_dec[2]; end
 			8'b10001000: begin key_pushed = 'hD; row_bit = row_dec[3]; end
-			default: begin key_pushed = 'hx; row_bit = 1'b0; end
+
+			default: begin key_pushed = 'hx; if ((col_q == 4'b1111)) row_bit = 1'b1; else row_bit = 1'b0; end
+			//8'bxxxxxxxx: begin key_pushed = 'hx; row_bit = 1'b1; end // Added line to keep prev_num <= current_num on multiple button presses with releases
+			//default: begin key_pushed = 'hx; row_bit = 1'b0; end
 		endcase
 endmodule

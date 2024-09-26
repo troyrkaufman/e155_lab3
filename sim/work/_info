@@ -11,326 +11,326 @@ cModel Technology
 dC:/lscc/radiant/3.2/modeltech/win32loem
 vdebouncer_fsm
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1727242214
+Z1 !s110 1727338069
 !i10b 1
 !s100 ZL^H]e^8O`]ZYioPnKoMe1
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 If3kOVcMgkFjQ=mAo@;Rzl0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z3 dC:/Users/troyk/hmc-e155-labs/lab3_tk/sim
-Z4 w1727240001
+Z4 dC:/Users/troyk/hmc-e155-labs/lab3_tk/sim
+Z5 w1727240001
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/debouncer_fsm.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/debouncer_fsm.sv
-!i122 2758
+!i122 2828
 L0 9 41
-Z5 OV;L;2020.1;71
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1727242214.000000
+Z7 !s108 1727338069.000000
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/debouncer_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/debouncer_fsm.sv|
 !i113 1
-Z7 o-work work -sv
-Z8 tCvgOpt 0
+Z8 o-work work -sv
+Z9 tCvgOpt 0
 vdebouncer_fsm_tb
 R0
-Z9 !s110 1727220839
+Z10 !s110 1727338072
 !i10b 1
 !s100 >7DCIk:3I=:OhJI<M3>?<3
-I^F2R=`5zNmS?nX>IO=nl_1
-S1
-Z10 dC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/sim
-Z11 w1726773944
-8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv
-FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv
-!i122 2716
-L0 3 26
 R2
-Z12 OT;L;2021.4;73
+IPQV0Nfm1AK29Sn1anGTNg2
+R3
+S1
+R4
+w1727338000
+8C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/debouncer_fsm_tb.sv
+FC:/Users/troyk/hmc-e155-labs/lab3_tk/tb/debouncer_fsm_tb.sv
+!i122 2837
+L0 3 26
+R6
 r1
 !s85 0
 31
-Z13 !s108 1727220839.000000
-!s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/debouncer_fsm_tb.sv|
-!s101 -O0
+Z11 !s108 1727338072.000000
+!s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/debouncer_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/debouncer_fsm_tb.sv|
 !i113 1
-Z14 o-work work -sv -O0
 R8
+R9
 vdisplay_controller
 R0
-Z15 !s110 1727242215
+R1
 !i10b 1
 !s100 JbMcLGgb^6:^1RPjK?AG73
-R1
-IN=U=HX8O5VgdGjUQK72561
 R2
-S1
+IN=U=HX8O5VgdGjUQK72561
 R3
-w1726888570
+S1
+R4
+Z12 w1726888570
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv
-!i122 2759
+!i122 2829
 L0 18 74
-R5
+R6
 r1
 !s85 0
 31
-R6
+R7
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv|
 !i113 1
-R7
 R8
+R9
 vkeypad_decoder
 R0
-!s110 1727242277
+Z13 !s110 1727338070
 !i10b 1
 !s100 GA5Hha8FMc8Nl@b<C7_Oo1
-R1
-I[D[^1cHbAKT3Nn3d<N_3B0
 R2
-S1
+I[D[^1cHbAKT3Nn3d<N_3B0
 R3
+S1
+R4
 w1727242272
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv
-!i122 2767
-Z16 L0 3 28
-R5
+!i122 2830
+Z14 L0 3 28
+R6
 r1
 !s85 0
 31
-!s108 1727242277.000000
+R7
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv|
 !i113 1
-R7
 R8
+R9
 vkeypad_decoder_tb
 R0
-R9
+Z15 !s110 1727338073
 !i10b 1
-!s100 Mo_nCUDUDJ[ZYCfL`:MHH1
-Ihf@5k=;D?hBL`7`EbWh@42
-S1
-R10
-w1726609234
-8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv
-FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv
-!i122 2717
-L0 3 42
+!s100 PSb4bzlNM=Gi_?C@2fz=;3
 R2
-R12
+IA3:?4YEgNAlcY8]XLkFz[2
+R3
+S1
+R4
+w1727337713
+8C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv
+FC:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv
+!i122 2838
+L0 3 43
+R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/keypad_decoder_tb.sv|
-!s101 -O0
+R11
+!s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv|
 !i113 1
-R14
 R8
+R9
 vlab3_tk
 R0
-R15
+R13
 !i10b 1
-!s100 kcLlMLS1D50Qhb>^Mj^GK0
-R1
-If7hICOKM>[m5G1cfUk6FK3
+!s100 i]HIh1]RLe:BNYd=kiW;U0
 R2
-S1
+IJ`_o[j?baK[UZ?g[93S>`3
 R3
-w1727242188
+S1
+R4
+w1727335676
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/lab3_tk.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/lab3_tk.sv
-!i122 2761
+!i122 2831
 L0 5 65
-R5
+R6
 r1
 !s85 0
 31
-Z17 !s108 1727242215.000000
+Z16 !s108 1727338070.000000
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/lab3_tk.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/lab3_tk.sv|
 !i113 1
-R7
 R8
+R9
 vlab3_tk_tb
 R0
-Z18 !s110 1727242216
+R10
 !i10b 1
 !s100 IfjcgL:P;n1zL:Qoki:202
-R1
-I7T1;Pka6Pc>K2O4Q@CK=b3
 R2
-S1
+I7T1;Pka6Pc>K2O4Q@CK=b3
 R3
+S1
 R4
+R5
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/lab3_tk_tb.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/tb/lab3_tk_tb.sv
-!i122 2766
-R16
-R5
+!i122 2836
+R14
+R6
 r1
 !s85 0
 31
-Z19 !s108 1727242216.000000
+R11
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/lab3_tk_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/lab3_tk_tb.sv|
 !i113 1
-R7
 R8
+R9
 vscanner_fsm
 R0
-R15
+R13
 !i10b 1
-!s100 Z83Y=gMf=`fcDCTbU:3Dg0
-R1
-I72BI6j:AN[m_d86IiF3J51
+!s100 0V4FG^JFMP5`<zIdWSf4=0
 R2
-S1
+IUA_CmW:SR?jN2=1Kg0eOC3
 R3
+S1
 R4
+w1727335634
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/scanner_fsm.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/scanner_fsm.sv
-!i122 2762
-L0 9 95
-R5
+!i122 2832
+L0 9 94
+R6
 r1
 !s85 0
 31
-R17
+R16
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/scanner_fsm.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/scanner_fsm.sv|
 !i113 1
-R7
 R8
+R9
 vscanner_fsm_tb
 R0
-R9
+!s110 1727338092
 !i10b 1
-!s100 kVLAQU2PbD40Wm_1_X]i]1
-ILC`PO2oZ0D_BXm`HE2Z^b3
-S1
-R10
-w1726968839
-8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv
-FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv
-!i122 2719
-L0 3 51
+!s100 2hWCnfz]FedM[BkzG@hBl3
 R2
-R12
+Ik2aFJgR;hQeSE8nDlhGdR0
+R3
+S1
+R4
+w1727338086
+8C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/scanner_fsm_tb.sv
+FC:/Users/troyk/hmc-e155-labs/lab3_tk/tb/scanner_fsm_tb.sv
+!i122 2840
+L0 3 51
+R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/scanner_fsm_tb.sv|
-!s101 -O0
+!s108 1727338091.000000
+!s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/scanner_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/scanner_fsm_tb.sv|
 !i113 1
-R14
 R8
+R9
 vsegment_decoder
 R0
-R15
+Z17 !s110 1727338071
 !i10b 1
 !s100 Ynf^@ONXOkB<1>[AORTEZ0
-R1
-II2aR<BClk5lc_cCNh]:d60
 R2
-S1
+II2aR<BClk5lc_cCNh]:d60
 R3
+S1
+R4
 w1726441150
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/segment_decoder.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/segment_decoder.sv
-!i122 2763
+!i122 2833
 L0 11 32
-R5
+R6
 r1
 !s85 0
 31
-R17
+Z18 !s108 1727338071.000000
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/segment_decoder.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/segment_decoder.sv|
 !i113 1
-R7
 R8
+R9
 vslide_state
 R0
-R18
+R17
 !i10b 1
-!s100 Gn[`hlPFkfJ9AO6J6cK3i0
-R1
-IiK?U]E0TbUL9HE>cGh[`f0
+!s100 lNKmA>ihhih^Vb[hIi`mQ3
 R2
-S1
+I2OGmWPf>eMm:UD08`S?nz3
 R3
+S1
 R4
+w1727335632
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/slide_state.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/slide_state.sv
-!i122 2764
+!i122 2834
 L0 3 16
-R5
+R6
 r1
 !s85 0
 31
-R17
+R18
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/slide_state.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/slide_state.sv|
 !i113 1
-R7
 R8
+R9
 vslide_state_tb
 R0
-R9
+R15
 !i10b 1
 !s100 8jHhn__fe^9`4[0EKJl=X2
-Ii4X]ST>bGDX6gb5M:_24N3
-S1
-R10
-R11
-8C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv
-FC:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv
-!i122 2720
-L0 3 25
 R2
+Iz`miVNQG1FBk5^UaYei?72
+R3
+S1
+R4
 R12
+8C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/slide_state_tb.sv
+FC:/Users/troyk/hmc-e155-labs/lab3_tk/tb/slide_state_tb.sv
+!i122 2839
+L0 3 25
+R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tkaufman/e155_labs/lab3_tk/e155_lab3/tb/slide_state_tb.sv|
-!s101 -O0
+!s108 1727338073.000000
+!s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/slide_state_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/slide_state_tb.sv|
 !i113 1
-R14
 R8
+R9
 vsynchronizer
 R0
-R18
+R10
 !i10b 1
 !s100 XOlRY9@UE`[gL;l[c:l7n2
-R1
-IOj5AUabS13BAFFi4X^be>2
 R2
-S1
+IOj5AUabS13BAFFi4X^be>2
 R3
+S1
+R4
 w1726535668
 8C:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv
 FC:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv
-!i122 2765
+!i122 2835
 L0 9 19
-R5
+R6
 r1
 !s85 0
 31
-R19
+R18
 !s107 C:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv|
 !i113 1
-R7
 R8
+R9

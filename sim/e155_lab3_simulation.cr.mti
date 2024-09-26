@@ -1,4 +1,18 @@
-C:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv
+C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/slide_state_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/slide_state_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module slide_state_tb
+
+Top level modules:
+	slide_state_tb
+
+} {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module keypad_decoder_tb
+
+Top level modules:
+	keypad_decoder_tb
+
+} {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/src/syncrhonizer.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module synchronizer
 
@@ -12,6 +26,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	lab3_tk
 
+} {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module display_controller
+
+Top level modules:
+	display_controller
+
 } {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/src/slide_state.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/src/slide_state.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module slide_state
@@ -19,12 +40,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	slide_state
 
-} {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/src/display_controller.sv
+} {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/scanner_fsm_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/scanner_fsm_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module display_controller
+-- Compiling module scanner_fsm_tb
 
 Top level modules:
-	display_controller
+	scanner_fsm_tb
+
+} {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module keypad_decoder
+
+Top level modules:
+	keypad_decoder
 
 } {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/lab3_tk_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/lab3_tk_tb.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -39,6 +67,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	debouncer_fsm
+
+} {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/debouncer_fsm_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/debouncer_fsm_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module debouncer_fsm_tb
+
+Top level modules:
+	debouncer_fsm_tb
 
 } {} {}} C:/Users/troyk/hmc-e155-labs/lab3_tk/src/scanner_fsm.sv {1 {vlog -work work -sv -stats=none C:/Users/troyk/hmc-e155-labs/lab3_tk/src/scanner_fsm.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

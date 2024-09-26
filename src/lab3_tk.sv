@@ -2,13 +2,13 @@
 // Email: tkaufman@hmc.edu
 // Date: 
 
-module lab3_tk(input logic   nrst,
+module lab3_tk(input logic   int_osc, nrst,
                input logic [3:0] row_d,
                output logic [3:0] column_signals,
                output logic en_right, en_left,
                output logic [6:0] seg);
     
-    logic int_osc;
+    //logic int_osc;
     
     logic [3:0] row_signals;
     logic row_pressed;
@@ -26,7 +26,7 @@ module lab3_tk(input logic   nrst,
 	logic [3:0] col_dec;
 	 
     // High-speed oscillator
-    LSOSC ls_osc (.CLKLFPU(1'b1), .CLKLFEN(1'b1), .CLKLF(int_osc));
+    //LSOSC ls_osc (.CLKLFPU(1'b1), .CLKLFEN(1'b1), .CLKLF(int_osc));
 
 /*
     synchronizer sync0(.clk(int_osc), .nrst(nrst), .data_d(row_d[0]), .data_q(sync_data0));
@@ -47,7 +47,7 @@ module lab3_tk(input logic   nrst,
 	assign column_signals = ~column_sig;
 
     // Scanner FSM
-    scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(row_bar), .key_press(key_press), .col_q(column_sig), .col_dec(col_dec)); 
+    scanner_fsm scan(.clk(int_osc), .nrst(nrst), .row_d(row_bar), .col_q(column_sig), .col_dec(col_dec)); 
 
     // Decodes the key pushed
     keypad_decoder keydec(.row_dec(row_bar), .col_dec(col_dec), .col_q(column_sig), .row_bit(row_pressed), .key_pushed(key_pushed));
@@ -56,7 +56,7 @@ module lab3_tk(input logic   nrst,
     debouncer_fsm dbnc(.clk(int_osc), .nrst(nrst), .row_d(row_pressed), .pulse_en(pulse_en));
 
     // Updates the current number and previous number
-    slide_state slide(.clk(int_osc), .nrst(nrst), .pulse_en(pulse_en), .key_press(key_press), .key_pushed(key_pushed), .current_num(current_num), .prev_num(prev_num));
+    slide_state slide(.clk(int_osc), .nrst(nrst), .pulse_en(pulse_en), .key_pushed(key_pushed), .current_num(current_num), .prev_num(prev_num));
 
     // Time multiplexing system
     display_controller dcon(.clk(int_osc), .nrst(nrst), .current_hex(current_hex), .hex1_num(en_right), .hex2_num(en_left));

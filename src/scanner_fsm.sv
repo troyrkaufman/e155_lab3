@@ -8,7 +8,6 @@
 */
 module scanner_fsm (input logic clk, nrst,
                     input logic [3:0] row_d,
-		    output logic key_press,
                     output logic [3:0] col_q, col_dec);
 
     typedef enum logic [3:0] {col0_base = 4'd0, col0_pressed = 4'd1, col0_released = 4'd2, col1_base = 4'd3, col1_pressed = 4'd4, col1_released = 4'd5, col2_base = 4'd6, col2_pressed = 4'd7, col2_released = 4'd8, col3_base = 4'd9, col3_pressed = 4'd10, col3_released = 4'd11} statetype;
@@ -85,19 +84,19 @@ module scanner_fsm (input logic clk, nrst,
 	// Output logic
 	always_comb 
 		case(current_state)
-		col0_base: begin col_q = 4'b0001; col_dec = 4'b0001; key_press = 1'b0; end
-		col1_base: begin col_q = 4'b0010; col_dec = 4'b0010; key_press = 1'b0; end
-		col2_base: begin col_q = 4'b0100; col_dec = 4'b0100; key_press = 1'b0; end
-		col3_base: begin col_q = 4'b1000;  col_dec = 4'b1000; key_press = 1'b0; end
-		col0_pressed: begin col_q = 4'b1111; col_dec = 4'b0001; key_press = 1'b1; end
-		col1_pressed: begin col_q = 4'b1111; col_dec = 4'b0010; key_press = 1'b1; end
-		col2_pressed: begin col_q = 4'b1111;  col_dec = 4'b0100; key_press = 1'b1; end
-		col3_pressed: begin col_q = 4'b1111; col_dec = 4'b1000; key_press = 1'b1; end
-		col0_released: begin col_q = 4'b1111; col_dec = 4'b0001; key_press = 1'b1; end
-		col1_released: begin col_q = 4'b1111; col_dec = 4'b0010; key_press = 1'b1; end
-		col2_released: begin col_q = 4'b1111;  col_dec = 4'b0100; key_press = 1'b1; end
-		col3_released: begin col_q = 4'b1111; col_dec = 4'b1000; key_press = 1'b1; end
-		default: begin col_q = 4'b1111; col_dec = 4'b1111; key_press = 1'b0; end
+		col0_base: begin col_q = 4'b0001; col_dec = 4'b0001; end
+		col1_base: begin col_q = 4'b0010; col_dec = 4'b0010; end
+		col2_base: begin col_q = 4'b0100; col_dec = 4'b0100; end
+		col3_base: begin col_q = 4'b1000;  col_dec = 4'b1000; end
+		col0_pressed: begin col_q = 4'b1111; col_dec = 4'b0001; end
+		col1_pressed: begin col_q = 4'b1111; col_dec = 4'b0010; end
+		col2_pressed: begin col_q = 4'b1111;  col_dec = 4'b0100; end
+		col3_pressed: begin col_q = 4'b1111; col_dec = 4'b1000; end
+		col0_released: begin col_q = 4'b1111; col_dec = 4'b0001; end
+		col1_released: begin col_q = 4'b1111; col_dec = 4'b0010; end
+		col2_released: begin col_q = 4'b1111;  col_dec = 4'b0100; end
+		col3_released: begin col_q = 4'b1111; col_dec = 4'b1000; end
+		default: begin col_q = 4'b1111; col_dec = 4'b1111; end
 		endcase
 		
 endmodule

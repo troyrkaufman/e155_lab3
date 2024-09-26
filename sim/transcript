@@ -1,4 +1,51 @@
-# 0 compiles, 13 failed with no errors.
+# Compile of debouncer_fsm.sv was successful.
+# Compile of display_controller.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of lab3_tk.sv was successful.
+# Compile of scanner_fsm.sv was successful.
+# Compile of segment_decoder.sv was successful.
+# Compile of slide_state.sv was successful.
+# Compile of syncrhonizer.sv was successful.
+# Compile of lab3_tk_tb.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim 
+# vsim -gui work.lab3_tk_tb -t ns 
+# Start time: 00:27:30 on Sep 26,2024
+# Loading sv_std.std
+# Loading work.lab3_tk_tb
+# Loading work.lab3_tk
+# ** Error: (vsim-3033) Instantiation of 'LSOSC' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_tk_tb/dut File: C:/Users/troyk/hmc-e155-labs/lab3_tk/src/lab3_tk.sv Line: 29
+#         Searched libraries:
+#             C:/Users/troyk/hmc-e155-labs/lab3_tk/sim/work
+# Loading work.scanner_fsm
+# Loading work.keypad_decoder
+# Loading work.debouncer_fsm
+# Loading work.slide_state
+# Loading work.display_controller
+# Loading work.segment_decoder
+# Error loading design
+# End time: 00:27:31 on Sep 26,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+vsim
+# vsim -gui -t ns work.lab3_tk_tb 
+# Start time: 00:28:09 on Sep 26,2024
+# Loading sv_std.std
+# Loading work.lab3_tk_tb
+# Loading work.lab3_tk
+# ** Error: (vsim-3033) Instantiation of 'LSOSC' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /lab3_tk_tb/dut File: C:/Users/troyk/hmc-e155-labs/lab3_tk/src/lab3_tk.sv Line: 29
+#         Searched libraries:
+#             C:/Users/troyk/hmc-e155-labs/lab3_tk/sim/work
+# Loading work.scanner_fsm
+# Loading work.keypad_decoder
+# Loading work.debouncer_fsm
+# Loading work.slide_state
+# Loading work.display_controller
+# Loading work.segment_decoder
+# Error loading design
+# End time: 00:28:09 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
 # Compile of debouncer_fsm.sv was successful.
 # Compile of display_controller.sv was successful.
 # Compile of keypad_decoder.sv was successful.
@@ -10,8 +57,8 @@
 # Compile of lab3_tk_tb.sv was successful.
 # 9 compiles, 0 failed with no errors.
 vsim
-# vsim -gui work.lab3_tk_tb -t ns 
-# Start time: 21:55:28 on Sep 24,2024
+# vsim -gui -t ns work.lab3_tk_tb 
+# Start time: 00:28:27 on Sep 26,2024
 # Loading sv_std.std
 # Loading work.lab3_tk_tb
 # Loading work.lab3_tk
@@ -24,74 +71,87 @@ vsim
 do wave.do
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: tkaufman  Hostname: JFMZ0R3  ProcessID: 21360
-#           Attempting to use alternate WLF file "./wlftznnbm0".
+#           Attempting to use alternate WLF file "./wlftn34c8y".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftznnbm0
+#           Using alternate file: ./wlftn34c8y
 # ** UI-Msg: (vish-4014) No objects found matching '/lab3_tk_tb/dut/scan/key_pushed'.
 # Executing ONERROR command at macro ./wave.do line 7
-add wave -position 3  sim:/lab3_tk_tb/dut/col_dec
-add wave -position 3  sim:/lab3_tk_tb/dut/col_q
-add wave -position 6  sim:/lab3_tk_tb/dut/int_osc
-add wave -position 7  sim:/lab3_tk_tb/dut/key_pushed
+add wave -position 6  sim:/lab3_tk_tb/dut/key_pushed
+add wave -position 4  sim:/lab3_tk_tb/dut/scan/col_dec
+run 2800 ns
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 5000 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/troyk/hmc-e155-labs/lab3_tk/sim/syswave.do
 add wave -position 3  sim:/lab3_tk_tb/dut/row_bar
-run 2800 ns
-# Compile of keypad_decoder.sv was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.keypad_decoder
-run 2800 ns
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Compile of keypad_decoder.sv was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.keypad_decoder
-run 2800 ns
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
 restart -f
 run 5000 ns
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
+quit -sim
+# End time: 00:45:35 on Sep 26,2024, Elapsed time: 0:17:08
+# Errors: 0, Warnings: 1
+vsim
+# vsim -gui -t ns work.scanner_fsm_tb 
+# Start time: 00:45:48 on Sep 26,2024
+# ** Fatal: (vsim-3382) New library format is incompatible with this version of the simulator.  Design unit 'C:/Users/troyk/hmc-e155-labs/lab3_tk/sim/work.scanner_fsm_tb'
+#    Time: 0 ns  Iteration: 0  Root: / File: NOFILE
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 00:45:49 on Sep 26,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
 # Compile of debouncer_fsm.sv was successful.
 # Compile of display_controller.sv was successful.
-# Compile of keypad_decoder.sv failed with 1 errors.
+# Compile of keypad_decoder.sv was successful.
 # Compile of lab3_tk.sv was successful.
 # Compile of scanner_fsm.sv was successful.
 # Compile of segment_decoder.sv was successful.
 # Compile of slide_state.sv was successful.
 # Compile of syncrhonizer.sv was successful.
 # Compile of lab3_tk_tb.sv was successful.
-# 9 compiles, 1 failed with 1 error.
-# Compile of keypad_decoder.sv was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.lab3_tk_tb
-# Loading work.lab3_tk
-# Loading work.scanner_fsm
-# Loading work.keypad_decoder
-# Loading work.debouncer_fsm
+# Compile of debouncer_fsm_tb.sv was successful.
+# Compile of keypad_decoder_tb.sv was successful.
+# Compile of scanner_fsm_tb.sv was successful.
+# Compile of slide_state_tb.sv was successful.
+# 13 compiles, 0 failed with no errors.
+vsim
+# vsim -gui -t ns work.slide_state_tb 
+# Start time: 00:48:31 on Sep 26,2024
+# Loading sv_std.std
+# Loading work.slide_state_tb
 # Loading work.slide_state
-# Loading work.display_controller
-# Loading work.segment_decoder
-run 5000 ns
+add wave -position end  sim:/slide_state_tb/clk
+add wave -position end  sim:/slide_state_tb/current_num
+add wave -position end  sim:/slide_state_tb/key_pushed
+add wave -position end  sim:/slide_state_tb/nrst
+add wave -position end  sim:/slide_state_tb/prev_num
+add wave -position end  sim:/slide_state_tb/pulse_en
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: tkaufman  Hostname: JFMZ0R3  ProcessID: 21360
+#           Attempting to use alternate WLF file "./wlftg3awf2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftg3awf2
+run 200 ns
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 700 ns
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# Compile of debouncer_fsm.sv was successful.
-# Compile of display_controller.sv was successful.
-# Compile of keypad_decoder.sv failed with 1 errors.
-# Compile of lab3_tk.sv was successful.
-# Compile of scanner_fsm.sv was successful.
-# Compile of segment_decoder.sv was successful.
-# Compile of slide_state.sv was successful.
-# Compile of syncrhonizer.sv was successful.
-# Compile of lab3_tk_tb.sv was successful.
-# 9 compiles, 1 failed with 1 error.
-# Compile of keypad_decoder.sv failed with 1 errors.
+restart -f
+run 200 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+qui t-sim
+# ambiguous command name "qui": quietly quit
+quit -sim
+# End time: 00:54:31 on Sep 26,2024, Elapsed time: 0:06:00
+# Errors: 0, Warnings: 1
 # Compile of debouncer_fsm.sv was successful.
 # Compile of display_controller.sv was successful.
 # Compile of keypad_decoder.sv was successful.
@@ -101,21 +161,113 @@ run 5000 ns
 # Compile of slide_state.sv was successful.
 # Compile of syncrhonizer.sv was successful.
 # Compile of lab3_tk_tb.sv was successful.
-# 9 compiles, 0 failed with no errors.
+# Compile of debouncer_fsm_tb.sv was successful.
+# Compile of keypad_decoder_tb.sv failed with 2 errors.
+# Compile of scanner_fsm_tb.sv was successful.
+# Compile of slide_state_tb.sv was successful.
+# 13 compiles, 1 failed with 2 errors.
+# Compile of keypad_decoder_tb.sv was successful.
+vsim
+# vsim -gui -t ns work.keypad_decoder_tb 
+# Start time: 00:56:32 on Sep 26,2024
+# Loading sv_std.std
+# Loading work.keypad_decoder_tb
+# Loading work.keypad_decoder
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /keypad_decoder_tb/dut File: C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'col_q'. The port definition is at: C:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv(3).
+#    Time: 0 ns  Iteration: 0  Instance: /keypad_decoder_tb/dut File: C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'row_bit'. The port definition is at: C:/Users/troyk/hmc-e155-labs/lab3_tk/src/keypad_decoder.sv(4).
+#    Time: 0 ns  Iteration: 0  Instance: /keypad_decoder_tb/dut File: C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv Line: 8
+# ** Warning: (vsim-3722) C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/keypad_decoder_tb.sv(8): [TFMPC] - Missing connection for port 'key_pushed'.
+add wave -position end  sim:/keypad_decoder_tb/dut/col_dec
+add wave -position end  sim:/keypad_decoder_tb/dut/col_q
+add wave -position end  sim:/keypad_decoder_tb/dut/key_pushed
+add wave -position end  sim:/keypad_decoder_tb/dut/row_bit
+add wave -position end  sim:/keypad_decoder_tb/dut/row_dec
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: tkaufman  Hostname: JFMZ0R3  ProcessID: 21360
+#           Attempting to use alternate WLF file "./wlft5b5iy6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5b5iy6
+run 500 ns
+# Compile of keypad_decoder_tb.sv failed with 1 errors.
+# Compile of keypad_decoder_tb.sv was successful.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.lab3_tk_tb
-# Loading work.lab3_tk
-# Loading work.scanner_fsm
+# Loading work.keypad_decoder_tb
+run 300 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of keypad_decoder_tb.sv was successful.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keypad_decoder_tb
+run 200 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of debouncer_fsm.sv was successful.
+# Compile of display_controller.sv was successful.
+# Compile of keypad_decoder.sv was successful.
+# Compile of lab3_tk.sv was successful.
+# Compile of scanner_fsm.sv was successful.
+# Compile of segment_decoder.sv was successful.
+# Compile of slide_state.sv was successful.
+# Compile of syncrhonizer.sv was successful.
+# Compile of lab3_tk_tb.sv was successful.
+# Compile of debouncer_fsm_tb.sv was successful.
+# Compile of keypad_decoder_tb.sv was successful.
+# Compile of scanner_fsm_tb.sv was successful.
+# Compile of slide_state_tb.sv was successful.
+# 13 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.keypad_decoder_tb
 # Loading work.keypad_decoder
+run 150 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+quit -sim
+# End time: 01:03:18 on Sep 26,2024, Elapsed time: 0:06:46
+# Errors: 0, Warnings: 1
+vsim
+# vsim -gui -t ns work.debouncer_fsm_tb 
+# Start time: 01:03:26 on Sep 26,2024
+# Loading sv_std.std
+# Loading work.debouncer_fsm_tb
 # Loading work.debouncer_fsm
-# Loading work.slide_state
-# Loading work.display_controller
-# Loading work.segment_decoder
-run 5000 ns
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
+add wave -position end  sim:/debouncer_fsm_tb/dut/clk
+add wave -position end  sim:/debouncer_fsm_tb/dut/counter
+add wave -position end  sim:/debouncer_fsm_tb/dut/current_state
+add wave -position end  sim:/debouncer_fsm_tb/dut/next_state
+add wave -position end  sim:/debouncer_fsm_tb/dut/nrst
+add wave -position end  sim:/debouncer_fsm_tb/dut/pulse_en
+add wave -position end  sim:/debouncer_fsm_tb/dut/row_d
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: tkaufman  Hostname: JFMZ0R3  ProcessID: 21360
+#           Attempting to use alternate WLF file "./wlfts1t4vf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts1t4vf
+run 500 ns
+quit -sim
+# End time: 01:06:27 on Sep 26,2024, Elapsed time: 0:03:01
+# Errors: 0, Warnings: 3
+# Compile of debouncer_fsm_tb.sv was successful.
+vsim
+# vsim -gui -t ns work.scanner_fsm_tb 
+# Start time: 01:07:03 on Sep 26,2024
+# Loading sv_std.std
+# Loading work.scanner_fsm_tb
+# Loading work.scanner_fsm
+# ** Fatal: (vsim-3365) Too many port connections. Expected 5, found 6.
+#    Time: 0 ns  Iteration: 0  Instance: /scanner_fsm_tb/dut File: C:/Users/troyk/hmc-e155-labs/lab3_tk/tb/scanner_fsm_tb.sv Line: 8
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 01:07:04 on Sep 26,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
 # Compile of debouncer_fsm.sv was successful.
 # Compile of display_controller.sv was successful.
 # Compile of keypad_decoder.sv was successful.
@@ -125,39 +277,34 @@ run 5000 ns
 # Compile of slide_state.sv was successful.
 # Compile of syncrhonizer.sv was successful.
 # Compile of lab3_tk_tb.sv was successful.
-# 9 compiles, 0 failed with no errors.
+# Compile of debouncer_fsm_tb.sv was successful.
+# Compile of keypad_decoder_tb.sv was successful.
+# Compile of scanner_fsm_tb.sv failed with 1 errors.
+# Compile of slide_state_tb.sv was successful.
+# 13 compiles, 1 failed with 1 error.
 restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.lab3_tk_tb
-# Loading work.lab3_tk
+# No Design Loaded!
+# Compile of scanner_fsm_tb.sv was successful.
+restart -f
+# No Design Loaded!
+vsim
+# vsim -gui -t ns work.scanner_fsm_tb 
+# Start time: 01:08:22 on Sep 26,2024
+# Loading sv_std.std
+# Loading work.scanner_fsm_tb
 # Loading work.scanner_fsm
-# Loading work.keypad_decoder
-# Loading work.debouncer_fsm
-# Loading work.slide_state
-# Loading work.display_controller
-# Loading work.segment_decoder
-run 5000 ns
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Compile of keypad_decoder.sv was successful.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.keypad_decoder
-run 5000 ns
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-restart -f
-run 5000 ns
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
+add wave -position end  sim:/scanner_fsm_tb/clk
+add wave -position end  sim:/scanner_fsm_tb/col_dec
+add wave -position end  sim:/scanner_fsm_tb/col_q
+add wave -position end  sim:/scanner_fsm_tb/nrst
+add wave -position end  sim:/scanner_fsm_tb/row_d
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: tkaufman  Hostname: JFMZ0R3  ProcessID: 21360
+#           Attempting to use alternate WLF file "./wlftv9zkan".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftv9zkan
+add wave -position end  sim:/scanner_fsm_tb/dut/current_state
+add wave -position end  sim:/scanner_fsm_tb/dut/next_state
+run 500 ns
+# End time: 01:11:07 on Sep 26,2024, Elapsed time: 0:02:45
+# Errors: 0, Warnings: 5

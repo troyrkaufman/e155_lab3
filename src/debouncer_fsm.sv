@@ -3,7 +3,7 @@
 // Date: 9/15/24
 
 /*
-    This FSM debounces the incoming row signal
+    This FSM debounces the incoming row signal and ouputs an enable signal to the slide state
 */
 
 module debouncer_fsm(input logic clk, nrst,

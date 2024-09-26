@@ -1,4 +1,10 @@
+// Author: Troy Kaufman
+// Email: tkaufman@hmc.edu
+// Date: 9/26/24
 
+/*
+	This module decodes the key that was pressed and sends a 1 bit signal to the debouncer to start debouncing the row signal
+*/
 
 module keypad_decoder(input logic [3:0] row_dec, col_dec, col_q,
 		      output logic row_bit,

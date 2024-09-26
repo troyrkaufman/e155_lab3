@@ -1,4 +1,10 @@
+// Author: Troy Kaufman
+// Email: tkaufman@hmc.edu
+// Date: 9/14/24
 
+/*
+	This module updates the current number and previous number
+*/
 
 module slide_state(input logic clk, nrst,
         input logic pulse_en, 

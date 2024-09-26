@@ -3,8 +3,8 @@
 // Date: 9/14/24
 
 /*
-    This FSM scans the keyboard for a key press and key release. This FSM also toggles column values to begin the scanning process.
-    This FSM will output the key's coordinates
+    This FSM scans the keyboard for a key press and key release. This FSM also toggles column values to begin the scanning process, and sends an encoded 
+    column signal to the keypad decoder. 
 */
 module scanner_fsm (input logic clk, nrst,
                     input logic [3:0] row_d,

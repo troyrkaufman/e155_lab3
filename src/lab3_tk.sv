@@ -1,6 +1,10 @@
 // Author: Troy Kaufman
 // Email: tkaufman@hmc.edu
-// Date: 
+// Date: 9/26/24
+
+/*
+    This is the top module that instantiates the scanner FSM, keypad decoder, debouncer FSM, slide state module, and time multiplexing system to properly scan the keypad
+*/
 
 module lab3_tk(input logic   nrst,
                input logic [3:0] row_d,

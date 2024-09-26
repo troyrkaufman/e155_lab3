@@ -2,13 +2,13 @@
 // Email: tkaufman@hmc.edu
 // Date: 
 
-module lab3_tk(input logic   int_osc, nrst,
+module lab3_tk(input logic   nrst,
                input logic [3:0] row_d,
                output logic [3:0] column_signals,
                output logic en_right, en_left,
                output logic [6:0] seg);
     
-    //logic int_osc;
+    logic int_osc;
     
     logic [3:0] row_signals;
     logic row_pressed;
@@ -26,7 +26,7 @@ module lab3_tk(input logic   int_osc, nrst,
 	logic [3:0] col_dec;
 	 
     // High-speed oscillator
-    //LSOSC ls_osc (.CLKLFPU(1'b1), .CLKLFEN(1'b1), .CLKLF(int_osc));
+    LSOSC ls_osc (.CLKLFPU(1'b1), .CLKLFEN(1'b1), .CLKLF(int_osc));
 
 /*
     synchronizer sync0(.clk(int_osc), .nrst(nrst), .data_d(row_d[0]), .data_q(sync_data0));

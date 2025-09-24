@@ -30,7 +30,7 @@ A 4×4 matrix keypad connects rows and columns via mechanical switches:
 - The display logic updates the previous and current key values on the dual 7-segment display.  
 
 Block Diagram:  
-![System Block Diagram](images/lab3-bloc-diagram-1.jpg)
+![System Block Diagram](images/lab3-block-diagram-1.jpg)
 
 ---
 

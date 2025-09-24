@@ -1,13 +1,15 @@
+// debouncer_fsm.sv
 // Author: Troy Kaufman
 // Email: tkaufman@hmc.edu
 // Date: 9/15/24
 
 /*
-    This FSM debounces the incoming row signal
+    This FSM debounces the incoming row signal. It provides a pulse enable to for the downstream 
+    logic to gate decoded key presses
 */
 
 module debouncer_fsm(input logic clk, nrst,
-                    input logic row_d, 
+                    input logic row_d,
                     output logic pulse_en);
     
     typedef enum logic [1:0] {S0, S1, S2, S3} statetype;

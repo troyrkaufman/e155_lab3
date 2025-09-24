@@ -1,4 +1,11 @@
+// keypad_decoder.sv
+// Author: Troy Kaufman
+// Email: tkaufman@hmc.edu
+// Date: 9/14/24
 
+/*
+    Decodes a 4x4 keypad and specifies if a row remains HIGH
+*/
 
 module keypad_decoder(input logic [3:0] row_dec, col_dec, col_q,
 		      output logic row_bit,
@@ -24,7 +31,5 @@ module keypad_decoder(input logic [3:0] row_dec, col_dec, col_q,
 			8'b10001000: begin key_pushed = 'hD; row_bit = row_dec[3]; end
 
 			default: begin key_pushed = 'hx; if ((col_q == 4'b1111)) row_bit = 1'b1; else row_bit = 1'b0; end
-			//8'bxxxxxxxx: begin key_pushed = 'hx; row_bit = 1'b1; end // Added line to keep prev_num <= current_num on multiple button presses with releases
-			//default: begin key_pushed = 'hx; row_bit = 1'b0; end
 		endcase
 endmodule

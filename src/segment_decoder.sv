@@ -1,5 +1,4 @@
-
-
+// segment_decoder.sv
 // Author: Troy Kaufman
 // Email: tkaufman@g.hmc.edu
 // Date: 9/6/24
@@ -19,7 +18,7 @@ module segment_decoder (input logic current_hex,
         begin
             if (~current_hex) switch = s1;
             else              switch = s2;
-            case (switch)
+            case (switch) //     ABC_DEFG
                 0:      seg = 7'b100_0000;
                 1:      seg = 7'b111_1001; 
                 2:      seg = 7'b010_0100;

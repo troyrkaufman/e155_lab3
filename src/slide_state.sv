@@ -1,4 +1,11 @@
+// slide_state.sv
+// Author: Troy Kaufman
+// Email: tkaufman@hmc.edu
+// Date: 9/15/24
 
+/*
+    Updates the current and previous numbers pressed
+*/
 
 module slide_state(input logic clk, nrst,
         input logic pulse_en, 
